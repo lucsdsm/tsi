@@ -1,0 +1,46 @@
+* {
+    transition: 1s;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5rem;
+}
+
+.container p {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container img {
+    width: 250px;
+    padding: 5rem;
+}
+
+.container button {
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: white;
+    border-width: 0.1px;
+    border-radius: 15px;
+}
+
+.container button:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+}
