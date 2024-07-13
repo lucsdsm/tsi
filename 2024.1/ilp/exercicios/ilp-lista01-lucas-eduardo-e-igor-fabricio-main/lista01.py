@@ -41,8 +41,14 @@
 
 # print(f"O valor da área de triângulo é de {area}")
 
+
 # 5. Volume da Esfera: Solicite ao usuário um valor do raio de uma esfera, calcule seu
 # volume e exiba o resultado do cálculo.
+
+# raio = float(input("Digite um valor para o raio: "))
+# volume = (4*3.14*(raio**3))/3
+
+# print(f"O valor do volume da esfera é de {volume:.2f}")
 
 
 # 6. Calculadora de Média Aritmética: Solicite ao usuário para que ele insira três
