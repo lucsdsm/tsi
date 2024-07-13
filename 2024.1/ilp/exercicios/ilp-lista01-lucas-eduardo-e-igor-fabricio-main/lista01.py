@@ -34,6 +34,12 @@
 # 4. Área do Triângulo: Solicite ao usuário um valor da base e da altura de um
 # triângulo, calcule sua área e exiba o resultado do cálculo.
 
+# base = float(input("Digite o valor da base: "))
+# altura = float(input("Digite o valor da altura: "))
+
+# area = (base*altura)/2
+
+# print(f"O valor da área de triângulo é de {area}")
 
 # 5. Volume da Esfera: Solicite ao usuário um valor do raio de uma esfera, calcule seu
 # volume e exiba o resultado do cálculo.
