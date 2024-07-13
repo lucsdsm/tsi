@@ -4,6 +4,37 @@
 # 15%, de R$ 3.751,06 até R$ 4.664,68 o imposto é de 22,5%, acima de R$ 4.664,68
 # o imposto é de 27,5%.
 
+# salario = float(input("Salário: "))
+# ir_porcentagem = 0
+# ir_valor = 0
+
+# if(salario <= 1903.98):
+#     ir_situacao = 0
+#     ir_porcentagem = 0
+#     ir_valor = 0
+
+# elif(2826.65 > salario > 1903.98):
+#     ir_situacao = 7.5
+#     ir_porcentagem = 0.075
+#     ir_valor = salario * ir_porcentagem
+
+# elif(3751.05 > salario > 2826.66):
+#     ir_situacao = 15
+#     ir_porcentagem = 0.15
+#     ir_valor = salario * ir_porcentagem
+
+# elif(4664.68 > salario > 3751.06):
+#     ir_situacao = 22.5
+#     ir_porcentagem = 0.225
+#     ir_valor = salario * ir_porcentagem
+
+# else:
+#     ir_situacao = 27.5
+#     ir_porcentagem = 0.275
+#     ir_valor = salario * ir_porcentagem
+
+# print(f"{ir_situacao}% do seu salário, equivalente a R${ir_valor}, será convertido em imposto de renda.")
+
 
 # 2. Escreva um programa que solicita o valor de um ano ao usuário, em seguida informa
 # se o ano fornecido é ou não bissexto. [Dica: um ano é bissexto se é divisível por 4,
