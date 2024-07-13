@@ -12,8 +12,14 @@
 
 # print(f"\nSoma = {soma}\nSubtração = {sub}\nMultiplicação = {mult}\nDivisão = {div}")
 
+
 # 2. Conversor de Temperatura: Solicite ao usuário um valor de temperatura em graus
 # Celsius, converta-a para Fahrenheit e exiba o resultado da conversão.
+
+# celsius = float(input("Digite a temperatura em graus celsius: "))
+# fahr = (celsius * 9/5) + 32
+
+# print(f"A temperatura em fahrenheit é de {fahr}°")
 
 
 # 3. Área do Círculo: Solicite ao usuário um valor do raio de um círculo, calcule sua
