@@ -89,6 +89,15 @@
 # seguida resolva uma equação quadrática do tipo y = ax2 + bx + c e exiba o valor
 # de y para o usuário.
 
+# a = float(input("Valor de a: "))
+# b = float(input("Valor de b: "))
+# c = float(input("Valor de c: "))
+# x = float(input("Valor de x: "))
+
+# y = a*(x**2) + b*x + c
+
+# print(f"Valor de Y é de: {y}")
+
 
 # 9. Calculadora de IMC: Solicite ao usuário os valores de peso (kg) e altura (m),
 # calcule o índice de massa corporal (IMC), sabendo que IMC = peso/altura², em seguida
