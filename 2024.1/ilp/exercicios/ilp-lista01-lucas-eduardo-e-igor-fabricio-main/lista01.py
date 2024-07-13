@@ -68,6 +68,22 @@
 # valores de 4 notas e seus respectivos pesos, em seguida realize o cálculo da média
 # pondera e exiba o resultado do cálculo.
 
+# n1 = float(input("Primeira nota: "))
+# p1 = int(input("Peso da primeira nota: "))
+# n2 = float(input("Segunda nota: "))
+# p2 = int(input("Peso da segunda nota: "))
+# n3 = float(input("Terceira nota: "))
+# p3 = int(input("Peso da terceira nota: "))
+# n4 = float(input("Quarta nota: "))
+# p4 = int(input("Peso da quarta nota: "))
+
+# cima = (n1*p1)+(n2*p2)+(n3*p3)+(n4*p4)
+# baixo = p1+p2+p3+p4
+
+# mp = cima/baixo
+
+# print(f"A média ponderada é de {mp:.1f}")
+
 
 # 8. Equação de Segundo Grau: Solicite ao usuário os valores de “a”, “b”, “c” e “x”, em
 # seguida resolva uma equação quadrática do tipo y = ax2 + bx + c e exiba o valor
