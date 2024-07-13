@@ -123,3 +123,10 @@
 # 11.Conversão de Segundos para o Formato HORA:MINUTO:SEGUNDO: Solicite
 # ao usuário um valor numérico correspondente à quantidade de segundos, em
 # seguida converta o valor para o formato de HORA:MINUTO:SEGUNDO.
+
+# segundos = int(input("Segundos: "))
+# hh = segundos // 3600
+# mm = (segundos % 3600) // 60
+# ss = segundos % 60
+
+# print(f"{hh}:{mm}:{ss}")
