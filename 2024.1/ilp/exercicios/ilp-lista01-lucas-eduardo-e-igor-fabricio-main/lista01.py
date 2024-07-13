@@ -2,6 +2,15 @@
 # realize as operações de soma, subtração, multiplicação e divisão, e ao final exiba
 # os valores de cada uma das operações.
 
+# n1 = float(input("Digite um número: "))
+# n2 = float(input("Digite outro número: "))
+
+# soma = n1 + n2
+# sub = n1 - n2
+# mult = n1 * n2
+# div = n1 / n2
+
+# print(f"\nSoma = {soma}\nSubtração = {sub}\nMultiplicação = {mult}\nDivisão = {div}")
 
 # 2. Conversor de Temperatura: Solicite ao usuário um valor de temperatura em graus
 # Celsius, converta-a para Fahrenheit e exiba o resultado da conversão.
