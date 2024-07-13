@@ -103,6 +103,13 @@
 # calcule o índice de massa corporal (IMC), sabendo que IMC = peso/altura², em seguida
 # exiba o valor do IMC calculado.
 
+# peso = float(input("Peso: "))
+# altura = float(input("Altura: "))
+
+# imc = peso/(altura**2)
+
+# print(f"Valor do IMC é de: {imc:.1f}")
+
 
 # 10.Tabuada: Solicite ao usuário um valor numérico, em seguida, exiba a tabuada de
 # um número específico (por exemplo, 5). O programa deverá ter como saída:
