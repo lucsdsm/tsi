@@ -25,6 +25,11 @@
 # 3. Área do Círculo: Solicite ao usuário um valor do raio de um círculo, calcule sua
 # área e exiba o resultado do cálculo.
 
+# raio = float(input("Digite o valor de um raio: "))
+# area = 3.14*(raio**2)
+
+# print(f"O valor da área do círculo é de {area}")
+
 
 # 4. Área do Triângulo: Solicite ao usuário um valor da base e da altura de um
 # triângulo, calcule sua área e exiba o resultado do cálculo.
