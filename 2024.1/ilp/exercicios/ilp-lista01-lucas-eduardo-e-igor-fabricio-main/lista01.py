@@ -116,6 +116,9 @@
 # 5x1 = 5; 5x2 = 10; 5x3 = 15; 5x4 = 20; 5x5 = 25; 5x6 = 30; 5x7 = 35; 5x8 = 40; 5x9
 # = 45; 5x10 = 50;
 
+# n = int(input("Número: "))
+# print(f"Tabuada do {n}:\n{n}*1 = {n*1}\n{n}*2 = {n*2}\n{n}*3 = {n*3}\n{n}*4 = {n*4}\n{n}*5 = {n*5}\n{n}*6 = {n*6}\n{n}*7 = {n*7}\n{n}*8 = {n*8}\n{n}*9 = {n*9}\n{n}*10 = {n*10}")
+
 
 # 11.Conversão de Segundos para o Formato HORA:MINUTO:SEGUNDO: Solicite
 # ao usuário um valor numérico correspondente à quantidade de segundos, em
