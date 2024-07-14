@@ -148,6 +148,20 @@
 # 2 7 3 8 6 (números digitados pelo usuário)
 # Saída no terminal: 2+7+3+8+6=26
 
+# valores = int(input("Quantidade de valores: "))
+# soma = 0
+# saida = ""
+
+# for x in range(valores):
+#     n = float(input("N valor: "))
+#     soma = soma + n
+
+# for x in range(valores-1):
+#     saida = saida + f"{n} + "
+
+# saida = saida + f"{n}"
+# print(f"{saida} = {soma}")
+
 
 # 12. Escreva um algoritmo que imprima na tela todos os números divisíveis por 7 (separa-
 # dos por “;”), mas que não sejam múltiplos de 5 no intervalo de 1000 a 3000.
