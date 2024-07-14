@@ -80,6 +80,16 @@
 # de valores que o usuário fornecerá para o algoritmo. Ao final, o algoritmo deverá infor-
 # mar quantos números pares foram digitados.
 
+# n = int(input("Quantidade de valores: "))
+# pares = 0
+
+# for x in range(n):
+#     valor = int(input("N valor: "))
+#     if(valor % 2 == 0):
+#         pares = pares + 1
+
+# print(f"{pares} número pares foram digitados.")
+
 # 9. Escreva um algoritmo que solicite do usuário 10 valores. O algoritmo deverá calcular
 # a soma da sequência de valores pares e dos valores ímpares, ou seja, somar o 1o
 # número digitado com o 3o, 5o, 7o e 9o e o mesmo para os números pares. Após, informar
