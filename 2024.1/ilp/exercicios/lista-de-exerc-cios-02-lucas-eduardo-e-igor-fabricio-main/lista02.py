@@ -135,3 +135,19 @@
 # 8. Escreva um programa que leia três valores e determine se eles podem formar um
 # triângulo. Caso possam, classifique o triângulo como equilátero, isósceles ou esca-
 # leno.
+
+# a = float(input("Digite o primeiro valor: "))
+# b = float(input("Digite o segundo valor: "))
+# c = float(input("Digite o terceiro valor: "))
+
+# if (a+b>c) or (b+c>a) or (a+c>b):
+#     if (a != b and b != c and a != c):
+#         print("Triângulo escaleno.")
+#     elif (a == b) and (b == c) and (c == a):
+#         print("Triângulo equilátero.")
+#     elif (a == b != c) or (b == c != a) or (c == a != b):
+#         print("Triângulo isóceles")
+#     else:
+#         print("Triângulo sem definição")
+# else:
+#     print("Os valores não podem formar um triângulo.")
