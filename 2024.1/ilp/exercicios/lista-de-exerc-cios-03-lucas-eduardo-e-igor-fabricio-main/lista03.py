@@ -67,6 +67,14 @@
 # 7. Escreva um algoritmo que solicite do usuário 5 valores e afinal apresente na tela o
 # somatório dos valores pares que foram digitados.
 
+# print("Digite 5 valores!")
+# soma = 0
+# for x in range (1, 6):
+#     n = int(input("N valor: "))
+#     if (n % 2 == 0):
+#         soma = soma + n
+# print(f"Somátoria dos números pares é de {soma}.")
+
 
 # 8. Escreva um algoritmo que solicite do usuário um número correspondente à quantidade
 # de valores que o usuário fornecerá para o algoritmo. Ao final, o algoritmo deverá infor-
