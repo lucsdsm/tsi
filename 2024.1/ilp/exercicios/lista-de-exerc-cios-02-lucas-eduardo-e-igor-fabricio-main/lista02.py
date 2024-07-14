@@ -90,6 +90,19 @@
 # 6. Escreva um programa que solicita ao usuário 3 valores inteiros. Em seguida o pro-
 # grama deverá exibir os 3 valores digitados pelo usuário em ordem crescente.
 
+# v1 = int(input("Digite o primeiro valor inteiro: "))
+# v2 = int(input("Digite o segundo valor inteiro: "))
+# v3 = int(input("Digite o terceiro valor inteiro: "))
+
+# if v1 > v2:
+#     v1, v2 = v2, v1
+# if v1 > v3:
+#     v1, v3 = v3, v1
+# if v2 > v3:
+#     v2, v3 = v3, v2
+
+# print(f"Em ordem crescente: {v1}, {v2}, {v3}.")
+
 
 # 7. Escreva um programa que solicita ao usuário 3 valores inteiros. Em seguida o pro-
 # grama deverá perguntar ao usuário se deseja ver os valores impressos em ordem
