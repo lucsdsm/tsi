@@ -109,6 +109,28 @@
 # crescente ou decrescente. Após a escolha, o programa deverá exibir os valores or-
 # denados conforme indicação do usuário.
 
+# v1 = int(input("Digite o primeiro valor inteiro: "))
+# v2 = int(input("Digite o segundo valor inteiro: "))
+# v3 = int(input("Digite o terceiro valor inteiro: "))
+# escolha = int(input("(1) Ordenar em ordem crescente - (2) Ordenar em ordem descrescente: "))
+
+# if (escolha == 1):
+#     if v1 > v2:
+#         v1, v2 = v2, v1
+#     if v1 > v3:
+#         v1, v3 = v3, v1
+#     if v2 > v3:
+#         v2, v3 = v3, v2
+#     print(f"Em ordem crescente: {v1}, {v2}, {v3}.")
+# elif (escolha == 2):
+#     if v1 > v2:
+#         v1, v2 = v2, v1
+#     if v1 > v3:
+#         v1, v3 = v3, v1
+#     if v2 > v3:
+#         v2, v3 = v3, v2
+#     print(f"Em ordem decrescente: {v3}, {v2}, {v1}.")
+
 
 # 8. Escreva um programa que leia três valores e determine se eles podem formar um
 # triângulo. Caso possam, classifique o triângulo como equilátero, isósceles ou esca-
