@@ -16,6 +16,17 @@
 # intervalo. Ao final o algoritmo deverá imprimir todos os números desse intervalo e o
 # somatório deles.
 
+# v1 = int(input("Início do intervalo: "))
+# v2 = int(input("Fim do intervalo: "))
+
+# soma = 0
+
+# for x in range(v1, v2+1):
+#     print(x, end=", ")
+#     soma = soma + x
+
+# print(f"somatória do intervalo = {soma}.")
+
 
 # 4. Escreva um algoritmo que solicite do usuário 10 números e ao final imprima na tela o
 # somatório desses números.
