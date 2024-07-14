@@ -8,6 +8,9 @@
 # 2. Escreva um algoritmo que imprima na tela do usuário os números inteiros de 1 até 100
 # (em ordem decrescente).
 
+# for x in range(100, 0, -1):
+#     print(x)
+
 
 # 3. Escreva um algoritmo que solicite ao usuário dois valores para determinação de um
 # intervalo. Ao final o algoritmo deverá imprimir todos os números desse intervalo e o
