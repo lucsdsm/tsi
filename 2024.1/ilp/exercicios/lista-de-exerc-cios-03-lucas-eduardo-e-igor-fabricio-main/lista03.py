@@ -43,6 +43,14 @@
 # 5. Escreva um algoritmo que solicite do usuário 5 valores e afinal apresente na tela o
 # somatório dos valores menores que 10.
 
+# print("Digite 5 valores!")
+# soma = 0
+# for x in range (1, 6):
+#     n = int(input("N valor: "))
+#     if (n < 10):
+#         soma = soma + n
+# print(f"Somátoria dos números menores que dez é de {soma}.")
+
 
 # 6. Escreva um algoritmo que solicite do usuário 5 valores e afinal apresente na tela o
 # somatório dos valores maiores ou igual a 10 e menor do que 20.
