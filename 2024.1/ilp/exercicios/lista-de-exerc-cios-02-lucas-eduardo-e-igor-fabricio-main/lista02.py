@@ -78,6 +78,14 @@
 # 5. Escreva um programa que leia dois valores inteiros e escreva como saída a diferença
 # entre o maior valor e o menor valor.
 
+# n1 = int(input("Primeiro número: "))
+# n2 = int(input("Segundo número: "))
+
+# if n1 > n2:
+#     print(f"A diferença entre {n1} e {n2} é de {n1-n2}.")
+# elif n2 > n1:
+#     print(f"A diferença entre {n2} e {n1} é de {n2-n1}.")
+
 
 # 6. Escreva um programa que solicita ao usuário 3 valores inteiros. Em seguida o pro-
 # grama deverá exibir os 3 valores digitados pelo usuário em ordem crescente.
