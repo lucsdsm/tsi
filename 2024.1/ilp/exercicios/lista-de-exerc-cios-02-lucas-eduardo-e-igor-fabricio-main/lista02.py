@@ -55,6 +55,12 @@
 # está DENTRO da faixa solicitada.”, senão o programa deverá exibir a mensagem “O
 # número digitado está FORA da faixa solicitada.”.
 
+# n = float(input("Um número de 1 a 10: "))
+# if (1 > n > 10):
+#     print(f"{n} não está na faixa solicitada.")
+# else:
+#     print(f"{n} está dentro da faixa solicitada.")
+
 
 # 4. Escreva um programa que dado dois valores informe qual deles é o maior.
 
