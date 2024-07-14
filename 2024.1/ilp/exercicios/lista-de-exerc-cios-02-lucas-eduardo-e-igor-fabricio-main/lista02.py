@@ -64,6 +64,16 @@
 
 # 4. Escreva um programa que dado dois valores informe qual deles é o maior.
 
+# n1 = float(input("Primeiro número: "))
+# n2 = float(input("Segundo número: "))
+
+# if n1 > n2:
+#     print(f"{n1} é maior que {n2}")
+# elif n1 == n2:
+#     print(f"{n1} é igual a {n2}")
+# else:
+#     print(f"{n2} é maior que {n1}")
+
 
 # 5. Escreva um programa que leia dois valores inteiros e escreva como saída a diferença
 # entre o maior valor e o menor valor.
