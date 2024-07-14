@@ -96,6 +96,26 @@
 # se o somatório dos números ímpares é maior, igual ou menor do que o dos números
 # pares.
 
+# par = 0
+# soma_par = 0
+# soma_impar = 0
+
+# for x in range(10):
+#     valor = int(input("N valor: "))
+#     if par == 0:
+#         soma_par = soma_par + valor
+#         par = 1
+#     else:
+#         soma_impar = soma_impar + valor
+#         par = 0
+
+# if soma_impar > soma_par:
+#     print(f"Somatória dos números ímpares ({soma_impar}) maior que a somátoria dos números pares ({soma_par})!")
+# elif soma_impar < soma_par:
+#     print(f"Somatória dos números pares ({soma_par}) maior que a somátoria dos números ímpares ({soma_impar})!")
+# else:
+#     print(f"Somatória dos números pares ({soma_par}) igual a somátoria dos números ímpares ({soma_impar})!")
+
 
 # 10. Escreva um algoritmo que solicite do usuário 10 valores inteiros. O algoritmo deverá
 # calcular o somatório dos números pares e dos números ímpares que forem digitados
