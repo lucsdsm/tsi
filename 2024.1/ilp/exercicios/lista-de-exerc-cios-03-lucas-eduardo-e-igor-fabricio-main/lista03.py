@@ -122,6 +122,24 @@
 # pelo usuário. Após o somatório, o algoritmo deve informar se o somatório dos números
 # ímpares é maior, igual ou menor do que o dos números pares.
 
+# soma_par = 0
+# soma_impar = 0
+
+# for x in range(10):
+#     valor = int(input("N valor: "))
+#     if (valor % 2 == 0):
+#         soma_par = soma_par + valor
+#     else:
+#         soma_impar = soma_impar + valor
+
+# if soma_impar > soma_par:
+#     print(f"Somatória dos números ímpares ({soma_impar}) maior que a somátoria dos números pares ({soma_par})!")
+# elif soma_impar < soma_par:
+#     print(f"Somatória dos números pares ({soma_par}) maior que a somátoria dos números ímpares ({soma_impar})!")
+# else:
+#     print(f"Somatória dos números pares ({soma_par}) igual a somátoria dos números ímpares ({soma_impar})!")  
+
+
 # 11. Escreva um algoritmo que informe ao usuário que calcula o somatório de uma sequên-
 # cia de números. O algoritmo deverá solicitar ao usuário o total de números que deverão
 # ser somados. Depois o algoritmo deve realizar a soma de todos os números e apre-
