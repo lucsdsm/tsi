@@ -1,0 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/pricedown');
+
+body {
+    background-color: black;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    font-family: 'Pricedown Bl', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 256px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.header p {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.header h1 {
+    padding-left: 1rem;
+    font-size: 30px;
+    cursor: default;
+}
+
+.nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    color: white;
+    font-family: 'Pricedown Bl', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.nav li:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
