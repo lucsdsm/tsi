@@ -230,3 +230,15 @@
 # nessa sequência houver um número que seja múltiplo de 3 escreva PI, e se houver
 # um número que seja múltiplo de 7 escreva PA. Caso haja um número que seja múltiplo
 # de 3 e 7 escreva POW.
+
+# valor = int(input("Valor: "))
+
+# for x in range(1, valor+1):
+#     if (x % 3 == 0) and (x % 7 == 0):
+#         print("POW")
+#     elif (x % 3 == 0):
+#         print("PI")
+#     elif (x % 7 == 0):
+#         print("PA")
+#     else:
+#         print(x)
