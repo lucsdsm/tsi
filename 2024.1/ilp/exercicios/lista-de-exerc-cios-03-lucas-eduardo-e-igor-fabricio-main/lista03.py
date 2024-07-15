@@ -208,6 +208,22 @@
 # pares e quantos são ímpares, até que seja digitado um número negativo. Ao final im-
 # prima na tela quantos números pares e ímpares foram digitados.
 
+# pares = 0
+# impares = 0
+
+# n = 0
+
+# while n >= 0:
+#     n = int(input("Número: "))
+#     if (n < 0):
+#         pass
+#     elif (n % 2 == 0):
+#         pares = pares + 1
+#     else:
+#         impares = impares + 1
+
+# print(f"Números pares: {pares}\nNúmeros ímpares: {impares};")
+
 
 # 16. Escreva um algoritmo que solicite ao usuário um valor e em seguida apresente na tela
 # uma sequência começando em 1 e indo até o valor fornecido pelo usuário. Porém, se
