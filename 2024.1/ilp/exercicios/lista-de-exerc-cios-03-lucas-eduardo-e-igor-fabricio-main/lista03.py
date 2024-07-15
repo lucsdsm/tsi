@@ -178,17 +178,17 @@
 # Saída: 1x9=9; 2x9=18; 3x9=27; 4x9=36; 5x9=45; 6x9=54; 7x9=63; 8x9=72;
 # 9x9=81; 10x9=90;
 
-saida = ""
-n = int(input("Número: "))
+# saida = ""
+# n = int(input("Número: "))
 
-for x in range(1, 11):
-    resultado = x * n
-    print(f"{x}x{n}={resultado}", end="; ")
+# for x in range(1, 11):
+#     resultado = x * n
+#     print(f"{x}x{n}={resultado}", end="; ")
 
 
 # 14. Escreva um algoritmo que solicite ao usuário um número inteiro e depois imprima uma
 # sequência de caracteres que represente um triângulo. Exemplo:
-# Entrada: 3 2
+# Entrada: 3
 # Saída:
 # *
 # * *
@@ -196,10 +196,13 @@ for x in range(1, 11):
 # * *
 # *
 
-# *
-# * *
-# *
+# n = int(input("Número inteiro: "))
 
+# for x in range(1, n):
+#      print('*' * x)
+
+# for x in range(n, n-n, -1):
+#      print('*' * x)
 
 # 15. Escreva um algoritmo que solicite números ao usuário e conte quantos desses são
 # pares e quantos são ímpares, até que seja digitado um número negativo. Ao final im-
