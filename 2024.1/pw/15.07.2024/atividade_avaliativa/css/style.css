@@ -1,6 +1,11 @@
 /* 1. Estilos Gerais */
 @import url('https://fonts.cdnfonts.com/css/pricedown'); /* 1.2 Defina uma fonte padrão para a página. */
 
+* {
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
 body {
     margin: 0 auto; /* 1.1 Aplique um reset básico para remover margens e paddings padrões dos navegadores. */
     display: flex;
@@ -9,6 +14,8 @@ body {
     background-size: cover;
     background-position: center center;
     background-image: url("../imagens/background.png");
+    user-select: none;
+    scroll-behavior: smooth;
 }
 
 .break { /* Quebrar o flexbox em linhas */
@@ -20,13 +27,13 @@ body {
     border-radius: 15px;
     height: 100vh;
     width: 100vh;
-    background-color: black;
+    background-color: rgb(32, 32, 32);
     border-radius: 15px;
 }
 
 .header { /* 2. Cabeçalho */
     background-color: rgba(198,209,174,255); /* 2.1 Estilize o cabeçalho com uma cor de fundo [...] */
-    color: white; /* 2.1 [..] e uma cor de texto que contrastem bem. */
+    color: black; /* 2.1 [..] e uma cor de texto que contrastem bem. */
     text-align: center; /* 2.2 Centralize o título e a imagem do logotipo, posicionando-os horizontalmente.*/
     padding-left: 1rem; /* 2.3 Adicione espaçamento interno (padding) ao cabeçalho.*/
     padding-right: 1rem; /* 2.3 Adicione espaçamento interno (padding) ao cabeçalho.*/
@@ -42,13 +49,15 @@ body {
 }
 
 .header p {
-    font-size: 30px;
+    font-size: 32px;
     cursor: pointer;
+    padding-top: 0.2rem;
 }
 
 .header h1 {
     padding-left: 1rem;
-    font-size: 30px;
+    padding-top: 0.2rem;
+    font-size: 32px;
     cursor: default;
     user-select: none;
 }
@@ -59,7 +68,11 @@ body {
     border-radius: 15px;
     justify-content: center;
     user-select: none; /* 3.3 Remova o sublinhado padrão dos links [...] */
-    background-color: black; /* 3.1 Dê ao menu de navegação um fundo diferente do cabeçalho para destacá-lo. */
+    background-color: rgb(0, 0, 0); /* 3.1 Dê ao menu de navegação um fundo diferente do cabeçalho para destacá-lo. */
+}
+
+.nav a {
+    text-decoration: none;
 }
 
 .nav li {
@@ -75,4 +88,58 @@ body {
 .nav li:hover {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black; /* 3.3 e adicione um efeito de mudança de cor ao passar o mouse sobre eles (hover). */
+}
+
+.main { /* 4. Conteúdo Principal (main) */
+    color: white;
+    padding: 1rem; /* 4. Conteúdo Principal (main) */
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.enredo {
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+.enredo h2 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: 'Pricedown Bl', sans-serif; /* 4.2 Estilize os subtítulos (H2) para que se destaquem, 
+    talvez usando uma cor ou um estilo de fonte diferente. */
+    color: black;
+}
+.enredo h2:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+.enredo p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+.personagens {
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+.personagens h2 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: 'Pricedown Bl', sans-serif; /* 4.2 Estilize os subtítulos (H2) para que se destaquem, 
+    talvez usando uma cor  ou um estilo de fonte diferente. */
+    color: black;
+}
+.personagens h2:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+.personagens li {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    display: inline-block;
 }
