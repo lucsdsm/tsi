@@ -18,6 +18,7 @@ body {
     scroll-behavior: smooth;
     max-width: 100%;
     max-height: 100%;
+    padding-bottom: 2rem;
 }
 
 .break { /* Quebrar o flexbox em linhas */
@@ -189,21 +190,19 @@ body {
     padding-right: 4rem;
 }
 
-.footer a {
-    text-decoration: none;
-}
 
 .footer li {
     color: white;
     font-family: 'Pricedown Bl', sans-serif;
     font-size: 24px;
-    cursor: pointer;
     display: inline-block; /* 3.2 Estilize os links de navegação para que fiquem dispostos horizontalmente.) */
     padding: 1rem;
     transition: 1s;
+    cursor: default;
 }
 
-.footer footer:hover {
+.footer li:hover {
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black; /* 3.3 e adicione um efeito de mudança de cor ao passar o mouse sobre eles (hover). */
+    color: black;
+    -webkit-text-stroke-color: white; /* 3.3 e adicione um efeito de mudança de cor ao passar o mouse sobre eles (hover). */
 }
