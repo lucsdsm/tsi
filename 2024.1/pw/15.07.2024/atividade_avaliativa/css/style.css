@@ -177,32 +177,65 @@ body {
     font-size: 28px;
 }
 
-.footer { /* 3. Menu de Navegação (nav) */
-    display:flex;
+.footer { /* 5. Rodapé (footer) */
+    display:inline-block;
+    width: 100%;
     border-radius: 15px;
-    justify-content: center;
-    user-select: none; /* 3.3 Remova o sublinhado padrão dos links [...] */
-    background-color: black; /* 3.1 Dê ao menu de navegação um fundo diferente do cabeçalho para destacá-lo. */
+    justify-content: center; /* 5.1 Dê ao rodapé uma cor de fundo semelhante à do cabeçalho para manter
+    a consistência visual. */
+    user-select: none; 
+    background-color: black; /* 5.2 Centralize o texto no rodapé. */
 }
 
-.footer ul {
+.footer p {
     text-align: center;
-    padding-right: 4rem;
-}
-
-
-.footer li {
     color: white;
+    padding-right: 3rem;
     font-family: 'Pricedown Bl', sans-serif;
     font-size: 24px;
-    display: inline-block; /* 3.2 Estilize os links de navegação para que fiquem dispostos horizontalmente.) */
-    padding: 1rem;
-    transition: 1s;
     cursor: default;
 }
 
-.footer li:hover {
+.footer p:hover {
     -webkit-text-stroke-width: 1px;
     color: black;
-    -webkit-text-stroke-color: white; /* 3.3 e adicione um efeito de mudança de cor ao passar o mouse sobre eles (hover). */
+    -webkit-text-stroke-color: white;
+}
+
+.formulario h2 {
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: 'Pricedown Bl', sans-serif;
+    color: black;
+}
+.formulario h2:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+.formulario ul {
+    text-align: center;
+    padding-right: 2.5rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.formulario li {
+    padding: 0.5rem;
+}
+
+.formulario input {
+    padding: 0.5rem;
+    width: 250px;
+    border: 0 none;
+    outline: 0;
+}
+
+.formulario input:focus {
+    text-decoration: none;
+    user-select: none;
+    border-left: 5px solid #c3b57f;
+    transition: 0.3s;
 }
