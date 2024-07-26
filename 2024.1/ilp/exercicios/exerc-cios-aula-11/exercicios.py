@@ -42,6 +42,17 @@
 # Digite o número de passos: 2
 # Lista rotacionada: [4, 5, 1, 2, 3]
 
+# numeros_fornecidos = input("Digite uma lista de números inteiros separados por espaço: ")
+# passo = int(input("Digite um número para o passo: "))
+
+# lista_numeros = [int(x) for x in numeros_fornecidos.split()]
+
+# nova_lista_numeros1 = lista_numeros[-passo:]
+# nova_lista_numeros2 = nova_lista_numeros1 + lista_numeros[:passo+1]
+
+# print(nova_lista_numeros2)
+
+
 # 4. Escreva um programa que leia uma lista de números inteiros fornecida pelo
 # usuário e utilize uma list comprehension para gerar uma nova lista contendo
 # os quadrados de todos os números ímpares da lista original.
