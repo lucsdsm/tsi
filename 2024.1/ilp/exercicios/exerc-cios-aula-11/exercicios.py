@@ -20,17 +20,20 @@
 # Digite o valor alvo: 7
 # Pares encontrados: (2, 5), (3, 4)
 
-# valores = input("Digite os números separados por UM espaço: ")
-# numero_alvo = int(input("Digite um número alvo: "))
-# lista_numeros = valores.split()
-# lista_pares = []
-# for x in lista_numeros:
-#     for y in lista_numeros:
-#         if int(x)+int(y) == numero_alvo:
-#             par = [f"{x} + {y} = {numero_alvo}"]
-#             lista_pares = lista_pares + par
+# numeros_fornecidos = input("Digite uma lista de números inteiros separados por espaço: ")
+# lista_numeros = [int(x) for x in numeros_fornecidos.split()]
+# alvo = int(input("Digite um número para ser o resultado da soma de dois pares: "))
 
-# print(f"Pares encontrados: {lista_pares}")
+# pares = ""
+
+# for x in range(len(lista_numeros)):
+#     for y in range(x + 1, len(lista_numeros)):
+#         novo_par = ""
+#         if (lista_numeros[x] + lista_numeros[y] == alvo):
+#             novo_par = f"({lista_numeros[x]}, {lista_numeros[y]}); "
+#             pares = pares + novo_par
+
+# print("Os pares cuja soma é igual ao número alvo são:\n", pares)
 
 # 3. Escreva um programa que leia uma lista de números inteiros fornecida pelo
 # usuário e um número de passos. O programa deve rotacionar a lista para a
