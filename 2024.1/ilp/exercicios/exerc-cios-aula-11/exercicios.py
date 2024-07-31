@@ -10,6 +10,30 @@
 # Entrada: 1 -2 5 Saída: 1 4 5
 # 3 4 -4 3 4 8
 
+# Definindo o número de linhas e colunas
+linhas = int(input("Digite a quantidade de linhas da matriz: "))
+colunas = int(input("Digite a quantidade de colunas da matriz: "))
+
+# Criação de uma variável para ser a matriz 2x3 com entradas do usuário
+matriz_NxM = []
+for i in range(linhas):
+    linha = []
+    for j in range(colunas):
+        valor = 0
+        linha += [valor]
+    matriz_NxM += [linha]
+
+for i in range(linhas):
+    linha = []
+    for j in range(colunas):
+        valor = int(input(f"Digite o valor para a posição ({i}, {j}): "))
+        linha += [valor]
+    matriz_NxM += [linha]
+
+# Exibindo a matriz
+for linha in matriz_NxM:
+    print(linha)
+
 # 2. Escreva um programa para ler e armazenar valores em duas matrizes (matriz1
 # e matriz2) de tamanho m por n. A quantidade de linhas e colunas deve ser
 # definida pelo usuário, bem como os valores de cada matriz. O Programa
