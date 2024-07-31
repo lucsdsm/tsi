@@ -58,3 +58,11 @@
 # os quadrados de todos os números ímpares da lista original.
 # Exemplo: Digite os números separados por espaço: 1 2 3 4 5 6 7 8 9 10
 # Quadrados dos números ímpares: [1, 9, 25, 49, 81]
+
+# numeros_fornecidos = input("Digite uma lista de números inteiros separados por espaço: ")
+
+# lista_numeros = [int(x) for x in numeros_fornecidos.split()]
+
+# nova_lista_numeros = [x**2 for x in lista_numeros if x%2!=0]
+
+# print(f'Quadrados dos números ímpares: {nova_lista_numeros}')
