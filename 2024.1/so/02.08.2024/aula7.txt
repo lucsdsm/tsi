@@ -1,0 +1,12 @@
+Algoritmos de escalonamento de CPU:
+
+FCFS ou FIFO (first come first served / first in first out): quem entra primeiro, sai primeiro. Fila simples.
+Algoritmo simples. Processos são criados e entram em uma fila. CPU atende o primeiro que está na fila e trata-o até o final. Só sai da fila quem finalizar
+ou entrar em modo de espera. Ao terminar entra o próximo. O processo que não está em execução está travado.
+
+
+SJF (Shrtest Job First): mais fácil primeiro.
+
+
+
+Circular (Round Robin): vai atendendo todos de forma circular a fim de tornar-se mais justo.
