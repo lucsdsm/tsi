@@ -23,4 +23,4 @@ Sistemas em lote: vazão, tempo de retorno, utilização.
 ""          interativos: tempo de resposta, satisfazer as expectavivas. 
 ""          tempo-real:  prazos e previsibilidade.
 
-Critérios do escalonador: utilização de cpu, throughput, tempo de tornaround, tempo de espera e de resposta.
+Critérios do escalonador: utilização de cpu, throughput, tempo de turnaround, tempo de espera e de resposta.
