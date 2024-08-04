@@ -1,58 +1,68 @@
-# 1. Escreva um programa para ler e armazenar valores em uma matriz de
-# tamanho m por n. A quantidade de linhas e colunas deve ser definida
-# pelo usuário e a matriz deve ser inicializada com valor 0 em todas as
-# posições. O programa deverá solicitar ao usuário um valor inteiro
-# positivo para armazenar em cada uma das posições da matriz. Caso o
-# usuário digite um valor negativo, esse valor deverá ser dobrado e
-# tornado positivo e em seguida inserido na respectiva posição. Ao final,
-# exiba os valores da matriz resultante. Considere que os valores de m=2
-# e n=3 e as entradas conforme exemplo:
-# Entrada: 1 -2 5 Saída: 1 4 5
-# 3 4 -4 3 4 8
+# 1. Escreva um programa que leia uma lista de números inteiros fornecida
+# pelo usuário e remova todos os elementos duplicados, mantendo a
+# ordem original dos elementos. Ao final, apresente os valores fornecidos
+# pelo usuário e o resultado do processamento da sua solução;
 
-# Definindo o número de linhas e colunas
-linhas = int(input("Digite a quantidade de linhas da matriz: "))
-colunas = int(input("Digite a quantidade de colunas da matriz: "))
+quantidade_numeros = int(input("Digite a quantidade de números a serem fornecidos: "))
+lista_numeros = []
 
-# Criação de uma variável para ser a matriz 2x3 com entradas do usuário
-matriz_NxM = []
-for i in range(linhas):
-    linha = []
-    for j in range(colunas):
-        valor = 0
-        linha += [valor]
-    matriz_NxM += [linha]
+for x in range(quantidade_numeros):
+    lista_numeros_fornecidos = []
+    numero_fornecido = input("Número inteiro: ")
+    if numero_fornecido not in lista_numeros:
+        lista_numeros_fornecidos = [numero_fornecido]
+        lista_numeros = lista_numeros + lista_numeros_fornecidos
 
-for i in range(linhas):
-    linha = []
-    for j in range(colunas):
-        valor = int(input(f"Digite o valor para a posição ({i}, {j}): "))
-        linha += [valor]
-    matriz_NxM += [linha]
+# 2. Escreva um programa que leia uma lista de números inteiros fornecida
+# pelo usuário e um número alvo. O programa deve encontrar todos os
+# pares de números na lista cuja soma seja igual ao número alvo.
+# 1. Exemplo: Digite os números separados por espaço: 2 4 3 5 7
+# Digite o valor alvo: 7
+# Pares encontrados: (2, 5), (3, 4)
 
-# Exibindo a matriz
-for linha in matriz_NxM:
-    print(linha)
+numeros_fornecidos = input("Digite uma lista de números inteiros separados por espaço: ")
+lista_numeros = [int(x) for x in numeros_fornecidos.split()]
+alvo = int(input("Digite um número para ser o resultado da soma de dois pares: "))
 
-# 2. Escreva um programa para ler e armazenar valores em duas matrizes (matriz1
-# e matriz2) de tamanho m por n. A quantidade de linhas e colunas deve ser
-# definida pelo usuário, bem como os valores de cada matriz. O Programa
-# deverá comparar os valores de cada posição e criar uma nova matriz inserindo
-# o valor 1, caso o valor matriz1 seja maior que o matriz2, inserir o valor 2 caso
-# o valor de matriz2 seja maior que o de matriz1, ou zero caso contrário. Ao final
-# exiba os valores das 3 matrizes.
-# matriz1 = [ matriz2 = [ matriz_resultado = [
-# [1, 5, 7], [3, 2, 9], [2, 1, 2],
-# [8, 3, 9], [8, 3, 1], [0, 0, 1],
-# [4, 6, 2] [1, 8, 7], [1, 2, 2],
-#         ]         ]           ]
+pares = ""
 
-# 3. Escreva um programa para realizar uma operação aritmética (+, -,
-# /, *, %) entre os valores de duas matrizes de tamanho m por n. .
-# A quantidade de linhas e colunas deve ser definida pelo usuário,
-# bem como os valores de cada matriz. O programa deverá
-# apresentar um menu com as opções de operações e realiza-las até
-# que o usuário digite o valor 0 como operação. Ao finalizar as
-# operações o programa deverá exibir a matriz resultado e retornar
-# para o menu inicial. Ao encerrar o programa, deverá ser exibida
-# uma mensagem de encerramento ao usuário.
+for x in range(len(lista_numeros)):
+    for y in range(x + 1, len(lista_numeros)):
+        novo_par = ""
+        if (lista_numeros[x] + lista_numeros[y] == alvo):
+            novo_par = f"({lista_numeros[x]}, {lista_numeros[y]}); "
+            pares = pares + novo_par
+
+print("Os pares cuja soma é igual ao número alvo são:\n", pares)
+
+# 3. Escreva um programa que leia uma lista de números inteiros fornecida pelo
+# usuário e um número de passos. O programa deve rotacionar a lista para a
+# direita pelo número de passos especificado.
+# Exemplo: Digite os números separados por espaço: 1 2 3 4 5
+# Digite o número de passos: 2
+# Lista rotacionada: [4, 5, 1, 2, 3]
+
+numeros_fornecidos = input("Digite uma lista de números inteiros separados por espaço: ")
+passo = int(input("Digite um número para o passo: "))
+
+lista_numeros = [int(x) for x in numeros_fornecidos.split()]
+
+nova_lista_numeros1 = lista_numeros[-passo:]
+nova_lista_numeros2 = nova_lista_numeros1 + lista_numeros[:passo+1]
+
+print(nova_lista_numeros2)
+
+
+# 4. Escreva um programa que leia uma lista de números inteiros fornecida pelo
+# usuário e utilize uma list comprehension para gerar uma nova lista contendo
+# os quadrados de todos os números ímpares da lista original.
+# Exemplo: Digite os números separados por espaço: 1 2 3 4 5 6 7 8 9 10
+# Quadrados dos números ímpares: [1, 9, 25, 49, 81]
+
+numeros_fornecidos = input("Digite uma lista de números inteiros separados por espaço: ")
+
+lista_numeros = [int(x) for x in numeros_fornecidos.split()]
+
+nova_lista_numeros = [x**2 for x in lista_numeros if x%2!=0]
+
+print(f'Quadrados dos números ímpares: {nova_lista_numeros}')
