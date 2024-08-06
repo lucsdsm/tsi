@@ -49,11 +49,9 @@ if (algoritmo == "Fifo" or algoritmo == "SJF"):
             for y in lista_tempos:
                 if x <= y:
                     pass
-    
                 elif x > y:
                     turnaround = turnaround + y
                     print(f"{x} > {y}; turnaround = {turnaround}")
-                    
             lista_tempos_turnaround = lista_tempos_turnaround + [turnaround]   
 
         # Calcular média
