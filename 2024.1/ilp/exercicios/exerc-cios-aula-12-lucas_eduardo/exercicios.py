@@ -50,6 +50,53 @@
 # [4, 6, 2] [1, 8, 7], [1, 2, 2],
 #         ]         ]           ]
 
+# linhas = int(input("Digite a quantidade de linhas da matriz: "))
+# colunas = int(input("Digite a quantidade de colunas da matriz: "))
+
+# matriz_1_NxM = []
+# for x in range(linhas):
+#     linha = []
+#     for y in range(colunas):
+#         valor = int(input(f"Digite o valor para a posição ({x}, {y}) da 1ª matriz: "))
+#         linha += [valor]
+#     matriz_1_NxM += [linha]
+
+# matriz_2_NxM = []
+# for x in range(linhas):
+#     linha = []
+#     for y in range(colunas):
+#         valor = int(input(f"Digite o valor para a posição ({x}, {y}) da 2ª matriz: "))
+#         linha += [valor]
+#     matriz_2_NxM += [linha]
+
+# matriz_3_NxM = []
+# for x in range(len(matriz_1_NxM)): # Número de linhas
+#     valor = 0
+#     linha = []
+#     for y in range(len(matriz_1_NxM[0])): # Número de colunas
+#         if matriz_1_NxM[x][y] > matriz_2_NxM[x][y]:
+#             valor = matriz_1_NxM[x][y]
+#             linha += [valor]
+#         elif matriz_1_NxM[x][y] < matriz_2_NxM[x][y]:
+#             valor = matriz_2_NxM[x][y]
+#             linha += [valor]
+#         else:
+#             valor = 0
+#             linha += [valor]
+#     matriz_3_NxM += [linha]
+
+# # Exibindo as matrizes
+# print("Primeira matriz: ")
+# for linha in matriz_1_NxM:
+#     print(linha)
+# print("Segunda matriz: ")
+# for linha in matriz_2_NxM:
+#     print(linha)
+# print("Terceira matriz: ")
+# for linha in matriz_3_NxM:
+#     print(linha)
+
+
 # 3. Escreva um programa para realizar uma operação aritmética (+, -,
 # /, *, %) entre os valores de duas matrizes de tamanho m por n. .
 # A quantidade de linhas e colunas deve ser definida pelo usuário,
