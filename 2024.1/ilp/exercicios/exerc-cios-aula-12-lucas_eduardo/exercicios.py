@@ -145,10 +145,13 @@ for x in range(len(matriz_1_NxM)): # Número de linhas
                 valor += matriz_1_NxM[x][k] * matriz_2_NxM[k][y]
             linha += [valor]
         elif operacao == 4:
-            pass
+            soma = 0
+            for k in range(len(matriz_1_NxM)):
+                valor += round(matriz_1_NxM[x][k] / matriz_2_NxM[k][y], 2)
+            linha += [valor]
         elif operacao == 5:
             if ((matriz_1_NxM[x][y] % matriz_2_NxM[x][y]) == 0):        
-                valor = int(matriz_1_NxM[x][y] % matriz_2_NxM[x][y])
+                valor = round(matriz_1_NxM[x][y] % matriz_2_NxM[x][y], 2)
             else:
                 valor = matriz_1_NxM[x][y] % matriz_2_NxM[x][y]
             linha += [valor]
