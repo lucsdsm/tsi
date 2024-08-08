@@ -107,61 +107,60 @@
 # para o menu inicial. Ao encerrar o programa, deverá ser exibida
 # uma mensagem de encerramento ao usuário.
 
-# linhas = int(input("Digite a quantidade de linhas da matriz: "))
-# colunas = int(input("Digite a quantidade de colunas da matriz: "))
+linhas = int(input("Digite a quantidade de linhas da matriz: "))
+colunas = int(input("Digite a quantidade de colunas da matriz: "))
 
-# matriz_1_NxM = []
-# for x in range(linhas):
-#     linha = []
-#     for y in range(colunas):
-#         valor = int(input(f"Digite o valor para a posição ({x}, {y}) da 1ª matriz: "))
-#         linha += [valor]
-#     matriz_1_NxM += [linha]
+matriz_1_NxM = []
+for x in range(linhas):
+    linha = []
+    for y in range(colunas):
+        valor = int(input(f"Digite o valor para a posição ({x}, {y}) da 1ª matriz: "))
+        linha += [valor]
+    matriz_1_NxM += [linha]
 
-# matriz_2_NxM = []
-# for x in range(linhas):
-#     linha = []
-#     for y in range(colunas):
-#         valor = int(input(f"Digite o valor para a posição ({x}, {y}) da 2ª matriz: "))
-#         linha += [valor]
-#     matriz_2_NxM += [linha]
+matriz_2_NxM = []
+for x in range(linhas):
+    linha = []
+    for y in range(colunas):
+        valor = int(input(f"Digite o valor para a posição ({x}, {y}) da 2ª matriz: "))
+        linha += [valor]
+    matriz_2_NxM += [linha]
 
-# print("Tabela de operações:\n1. Adição\n2. Subtração\n3. Multiplicação\n4. Divisão\n5. Resto da divisão")
-# matriz_3_NxM = []
-# for x in range(len(matriz_1_NxM)): # Número de linhas
-#     linha = []
-#     for y in range(len(matriz_1_NxM[0])): # Número de colunas
-#         operacao = int(input(f"Operação desejada para a posição ({x}, {y}) da 3ª matriz: "))
-#         if operacao == 1:
-#             valor = matriz_1_NxM[x][y] + matriz_2_NxM[x][y]
-#             linha += [valor]
-#         elif operacao == 2:
-#             valor = matriz_1_NxM[x][y] - matriz_2_NxM[x][y]
-#             linha += [valor]
-#         elif operacao == 3:
-#             valor = matriz_1_NxM[x][y] * matriz_2_NxM[x][y]
-#             linha += [valor]
-#         elif operacao == 4:
-#             if ((matriz_1_NxM[x][y] % matriz_2_NxM[x][y]) == 0):        
-#                 valor = int(matriz_1_NxM[x][y] / matriz_2_NxM[x][y])
-#             else:
-#                 valor = matriz_1_NxM[x][y] / matriz_2_NxM[x][y]
-#             linha += [valor]
-#         elif operacao == 5:
-#             if ((matriz_1_NxM[x][y] % matriz_2_NxM[x][y]) == 0):        
-#                 valor = int(matriz_1_NxM[x][y] % matriz_2_NxM[x][y])
-#             else:
-#                 valor = matriz_1_NxM[x][y] % matriz_2_NxM[x][y]
-#             linha += [valor]
-#     matriz_3_NxM += [linha]
+print("Tabela de operações:\n1. Adição\n2. Subtração\n3. Multiplicação\n4. Divisão\n5. Resto da divisão")
+matriz_3_NxM = []
+for x in range(len(matriz_1_NxM)): # Número de linhas
+    linha = []
+    for y in range(len(matriz_1_NxM[0])): # Número de colunas
+        valor = 0
+        operacao = int(input(f"Operação desejada para a posição ({x}, {y}) da 3ª matriz: "))
+        if operacao == 1:
+            valor = matriz_1_NxM[x][y] + matriz_2_NxM[x][y]
+            linha += [valor]
+        elif operacao == 2:
+            valor = matriz_1_NxM[x][y] - matriz_2_NxM[x][y]
+            linha += [valor]
+        elif operacao == 3:
+            soma = 0
+            for k in range(len(matriz_1_NxM)):
+                valor += matriz_1_NxM[x][k] * matriz_2_NxM[k][y]
+            linha += [valor]
+        elif operacao == 4:
+            pass
+        elif operacao == 5:
+            if ((matriz_1_NxM[x][y] % matriz_2_NxM[x][y]) == 0):        
+                valor = int(matriz_1_NxM[x][y] % matriz_2_NxM[x][y])
+            else:
+                valor = matriz_1_NxM[x][y] % matriz_2_NxM[x][y]
+            linha += [valor]
+    matriz_3_NxM += [linha]
 
-# # Exibindo as matrizes
-# print("Primeira matriz: ")
-# for linha in matriz_1_NxM:
-#     print(linha)
-# print("Segunda matriz: ")
-# for linha in matriz_2_NxM:
-#     print(linha)
-# print("Terceira matriz: ")
-# for linha in matriz_3_NxM:
-#     print(linha)
+# Exibindo as matrizes
+print("Primeira matriz: ")
+for linha in matriz_1_NxM:
+    print(linha)
+print("Segunda matriz: ")
+for linha in matriz_2_NxM:
+    print(linha)
+print("Terceira matriz: ")
+for linha in matriz_3_NxM:
+    print(linha)
