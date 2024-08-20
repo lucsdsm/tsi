@@ -30,3 +30,8 @@
 #     for j in range(coluna):
 #         print(matriz_2x2[i][j], end=" ")
 #     print() # quebra de linha, fora do laço FOR mais interno
+
+# lista = [x for x in range(2, 21, 2)]
+
+# for x in range(len(lista)):
+#     print(lista[x])
