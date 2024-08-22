@@ -46,15 +46,39 @@
 # for {"Ana": [8.5, 9.0, 7.5], "Bruno": [6.0, 5.5, 4.0], "Carla": [7.0, 8.0, 9.0]},
 # o programa deve exibir {"Ana": 8.33, "Carla": 8.0}.
 
-# notas_alunos = {"Ana": [8.5, 9.0, 7.5], "Bruno": [6.0, 5.5, 4.0], "Carla": [7.0, 8.0, 9.0]}
-# aprovados = {}
+quantidade_alunos = int(input("Quantidade de alunos: "))
+lista_nomes = []
+lista_notas = []
 
-# for aluno, notas in notas_alunos.items():
-#     media = sum(notas) / len(notas)
-#     if media >= 7:
-#         aprovados[aluno] = round(media, 2)
+for i in range(quantidade_alunos):
+    nome = input(f"Digite o nome do aluno(a) {i+1}: ")
+    lista_nomes += [nome]
+    for j in range(3):
+        nota = int(input(f"Digite a nota {j+1} do aluno {i+1}: "))
+        lista_notas += [nota]
 
-# print(aprovados)
+notas_alunos = {}
+tamanho = len(lista_nomes)
+razao = 3
+for i in range(tamanho):
+    notas_alunos[lista_nomes[i]] = lista_notas[i*razao:(i+1)*razao]
+
+# Calcular médias
+lista_medias = []
+for i in range(quantidade_alunos):
+    soma = 0
+    for nota in notas_alunos[lista_nomes[i]]:
+        soma += nota
+    lista_medias += [soma/3]
+
+# Alunos aprovados
+aprovados = {}
+for i in range(len(lista_medias)):
+    if lista_medias[i] > 7:
+        aprovados[lista_nomes[i]] = lista_medias[i]
+
+# Saída do programa
+print(aprovados)
 
 # Conjuntos:
 
