@@ -4,11 +4,27 @@
 # saída uma nova tupla com os elementos pares da tupla original. Por
 # exemplo, se a tupla for (1, 2, 3, 4, 5), o programa deve imprimir (2, 4).
 
+# tupla_inteiros = (1, 2, 3, 4, 5)
+# tupla_pares = ()
+# lista_pares = []
+
+# for x in tupla_inteiros:
+#     if x % 2 == 0:
+#         lista_pares += [x]
+
+# tupla_pares = tuple(lista_pares)
+# print(tupla_pares)
 
 # 2. Escreva um programa que receba uma tupla de strings e exiba uma nova
 # tupla com as strings ordenadas alfabeticamente e sem repetições. Por
 # exemplo, se a tupla for ("banana", "maçã", "laranja", "banana", "uva"), o
 # programa deve imprimir ("banana", "laranja", "maçã", "uva").
+
+# tupla_strings = ("banana", "maçã", "laranja", "banana", "uva")
+# lista_ordenada = sorted(tupla_strings)
+# conjunto_sem_repeticoes = set(lista_ordenada)
+# tupla_sem_repeticoes = tuple(conjunto_sem_repeticoes)
+# print(tupla_sem_repeticoes)
 
 # Dicionários:
 
@@ -17,6 +33,11 @@
 # população. Por exemplo, se o dicionário for {"Brasil": 211.8, "China":
 # 1400.5, "Índia": 1366.4}, o programa deve exibir "China".
 
+# paises_populacoes = {"Brasil": 211.8, "China": 1400.5, "Índia": 1366.4}
+
+# maior_populacao = max(paises_populacoes, key=paises_populacoes.get)
+
+# print(maior_populacao)
 
 # 4. Escreva um programa que receba como entrada um dicionário que mapeia
 # nomes de alunos para suas notas e exiba um novo dicionário com os nomes
@@ -25,6 +46,16 @@
 # for {"Ana": [8.5, 9.0, 7.5], "Bruno": [6.0, 5.5, 4.0], "Carla": [7.0, 8.0, 9.0]},
 # o programa deve exibir {"Ana": 8.33, "Carla": 8.0}.
 
+# notas_alunos = {"Ana": [8.5, 9.0, 7.5], "Bruno": [6.0, 5.5, 4.0], "Carla": [7.0, 8.0, 9.0]}
+# aprovados = {}
+
+# for aluno, notas in notas_alunos.items():
+#     media = sum(notas) / len(notas)
+#     if media >= 7:
+#         aprovados[aluno] = round(media, 2)
+
+# print(aprovados)
+
 # Conjuntos:
 
 # 5. Escreva um programa que receba dois conjuntos de números inteiros como
@@ -32,9 +63,29 @@
 # os conjuntos. Por exemplo, se os conjuntos forem {1, 2, 3, 4} e {3, 4, 5, 6},
 # o programa deve exibir {3, 4}.
 
+# conjunto1 = {1, 2, 3, 4}
+# conjunto2 = {3, 4, 5, 6}
+# conjunto3 = set()
+
+# for x in conjunto1:
+#     if x in conjunto2:
+#         conjunto3.add(x)
+
+# print(conjunto3)
 
 # 6. Escreva um programa que receba um conjunto de strings e exiba um novo
 # conjunto com as strings que são palíndromos. Um palíndromo é uma palavra
 # que é igual a ela mesma quando lida de trás para frente. Por exemplo, se o
 # conjunto for {"arara", "casa", "ovo", "radar"}, o programa deve exibir
 # {"arara", "ovo", "radar"}.
+
+# conjunto1 = {"arara", "casa", "ovo", "radar"}
+# conjunto2 = set()
+
+# for x in conjunto1:
+#     string = x
+#     string_inversa = string[::-1]
+#     if string == string_inversa:
+#         conjunto2.add(x)
+
+# print(conjunto2)
