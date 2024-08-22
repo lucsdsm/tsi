@@ -36,3 +36,9 @@
 # print(f"Nome: {alunos[id_aluno]['nome']}") # Nome: Pedro
 # print(f"Idade: {alunos[id_aluno]['idade']}") # Idade: 18
 # print(f"Curso: {alunos[id_aluno]['curso']}") # Curso: Mecatrônica
+
+# Conjuntos
+
+meu_conjunto = {(1,2,3), "coisa", 12}
+meu_conjunto.add("novo valor")
+print(meu_conjunto)
