@@ -118,6 +118,35 @@
 # resultado da união e diferença entre os conjuntos (use as funções embutidas union()
 # e difference()).
 
+# elementos_lista_a = input(f"Elementos da lista A separados por vírgula: ")
+# elementos_lista_b = input(f"Elementos da lista B separados por vírgula: ")
+# elementos_lista_c = input(f"Elementos da lista C separados por vírgula: ")
+# lista_A = []
+# lista_B = []
+# lista_C = []
+
+# for x in elementos_lista_a:
+#     if x != ",":
+#         lista_A += [int(x)]
+
+# for x in elementos_lista_b:
+#     if x != ",":
+#         lista_B += [int(x)]
+
+# for x in elementos_lista_c:
+#     if x != ",":
+#         lista_C += [int(x)]
+
+# conjunto_A = set(lista_A)
+# conjunto_B = set(lista_B)
+# conjunto_C = set(lista_C)
+
+# uniao_A_B = conjunto_A.union(conjunto_B)
+# diferenca_uniao_A_B_e_C = uniao_A_B.difference(conjunto_C)
+
+# print(f"União: {uniao_A_B}")
+# print(f"Diferença: {diferenca_uniao_A_B_e_C}")
+
 # 8. Remoção Condicional em Conjuntos: Escreva um programa que receba como entrada
 # uma sequência de valores inteiros e cria um conjunto a partir desses valores. Além
 # disso, o programa também recebe um valor numérico base para atuar como um divisor.
