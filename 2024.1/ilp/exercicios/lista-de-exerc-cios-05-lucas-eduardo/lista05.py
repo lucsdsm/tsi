@@ -154,6 +154,36 @@
 # números divisíveis pelo divisor digitado pelo usuário. Exiba na tela os dois conjuntos e
 # o divisor.
 
+# valores = input("Valores inteiros separados por espaço: ")
+# divisor = int(input("Divisor: "))
+# lista_valores = []
+# lista_valores_inteiros = []
+# lista_valores_divisiveis = []
+# valor_atual = ""
+
+# for valor in valores:
+#     if valor == " ":
+#         lista_valores.append(valor_atual)
+#         valor_atual = ""
+#     else:
+#         valor_atual += valor
+    
+# if valor_atual: # Adiciona o úlimo valor
+#     lista_valores.append(valor_atual)
+
+# for valor in lista_valores: # Converte os elementos da lista em inteiros
+#     lista_valores_inteiros.append(int(valor))
+
+# for valor in lista_valores_inteiros:
+#     if valor % divisor == 0:
+#         lista_valores_divisiveis.append(valor)
+
+# conjunto1 = set(lista_valores_inteiros)
+# conjunto2 = set(lista_valores_divisiveis)
+
+# print(f"Conj 1: {conjunto1}")
+# print(f"Conj 2: {conjunto2}")
+
 # 9. Operações em Conjuntos: Escreva um programa que, dados dois conjuntos A e B de
 # valores fornecidos pelo usuário, verifique se B é um subconjunto de A. Em seguida crie
 # um conjunto C com valores do conjunto A, mas sem os valores do conjunto B. Ao final,
