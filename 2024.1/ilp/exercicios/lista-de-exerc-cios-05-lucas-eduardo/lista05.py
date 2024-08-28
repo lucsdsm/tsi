@@ -1,187 +1,193 @@
 # 1. Criação e acesso: Escreva um programa que crie uma tupla que seja criada contendo
 # os dados nome, idade e estado. Como saída, o programa deve imprimir cada um
-# desses valores separadamente. Exemplos:
-# Entrada 1:
-# Ana
-# 20
-# RN
+# desses valores separadamente.
 
-# Saída 1:
-# Nome: Ana
-# Idade: 20
-# Estado: RN
+# nome = input("Nome: ")
+# idade = int(input("Idade: "))
+# uf = input("UF: ")
 
-# Entrada 2:
-# José
-# 15
-# CE
-
-# Saída 2:
-# Nome: José
-# Idade: 15
-# Estado: CE
+# tupla_dados = (nome, idade, uf)
+# print(f"\n- Dados - \nNome: {tupla_dados[0]}\nIdade: {tupla_dados[1]}\nUF: {tupla_dados[2]}\n")
 
 # 2. Desempacotamento: Escreva um programa que realiza o cálculo da distância entre
 # dois pontos no plano cartesiano. O programa deve receber como entrada 4 valores
 # inteiros para os dois pontos. Em seguida, calcular a distância entre os dois pontos e
-# exibir o valor da distância ao usuário. Exemplos:
-# Entrada 1:
-# Ponto 1: 1 3
-# Ponto 2: 1 8
+# exibir o valor da distância ao usuário.
 
-# Saída 1:
-# Distância: 5
+# import math
 
-# Entrada 2:
-# Ponto 1: 0 0
-# Ponto 2: 5 5
+# ponto1 = (float(input("Posição no eixo X do primeiro ponto: ")), float(input("Posição no eixo Y do primeiro ponto: ")))
+# ponto2 = (float(input("Posição no eixo X do segundo ponto: ")), float(input("Posição no eixo Y do segundo ponto: ")))
 
-# Saída 2:
-# Distância: 7.07
+# x1, y1 = ponto1 # Atribui x1 e y1 aos valores em ordem da tupla ponto1
+# x2, y2 = ponto2 # Atribui x2 e y2 aos valores em ordem da tupla ponto2
+
+# distancia_ponto1_ponto2 = round(math.sqrt(((x2-x1)**2) + (y2-y1)**2), 3)
+
+# print(f"Distância = {distancia_ponto1_ponto2}")
 
 # 3. Concatenação de tuplas: Escreva um programa que cria duas tuplas: uma para frutas
 # e outra para vegetais. O programa deve imprimir no terminal o resultado de uma única
 # tupla formada pela concatenação das duas tuplas anteriormente fornecidas pelo
-# usuário. Exemplos:
-# Entrada 1:
-# Frutas: Uva, banana e maçã
-# Vegetais:
-# Cenoura e batata
+# usuário.
 
-# Saída 1:
-# Alimentos:
-# (‘uva’, ‘banana’, ‘maçã, ‘cenoura’, ‘batata’)
+# tamanho_tupla_frutas = int(input("Quantidade de frutas: "))
+# tamanho_tupla_vegetais = int(input("Quantidade de vegetais: "))
+# lista_frutas = []
+# lista_vegetais = []
+
+# for x in range(tamanho_tupla_frutas):
+#     fruta = input(f"{x+1}º fruta: ")
+#     lista_frutas += [fruta]
+
+# for x in range(tamanho_tupla_vegetais):
+#     vegetal = input(f"{x+1}º vegetal: ")
+#     lista_vegetais += [vegetal]
+
+# tupla_frutas = tuple(lista_frutas)
+# tupla_vegetais = tuple(lista_vegetais)
+
+# tupla_frutas_e_vegetais = tupla_frutas + tupla_vegetais
+
+# print(f"Alimentos: \n{tupla_frutas_e_vegetais}")
 
 # 4. Conversão de Lista para Tupla: Escreva um programa que dada uma lista de números,
 # converta essa lista em uma tupla e, em seguida, utilize slices para criar uma nova tupla
-
 # que contenha apenas os três primeiros elementos da tupla original. Imprima o
-# resultado da lista original e as duas tuplas criadas. Exemplo:
-# Entrada:
-# lista: [1,2,3,4,5]
+# resultado da lista original e as duas tuplas criadas.
 
-# Saída:
-# Tupla: (1,2,3,4,5)
-# Slice da tupla: (1,2,3)
+# lista_numeros = []
+
+# numeros = input("Sequência de números separados por espaço: ")
+
+# for x in numeros:
+#     if x != " ":
+#         lista_numeros += [int(x)]
+
+# tupla_numeros = tuple(lista_numeros)
+# tupla_tres_primeiros_numeros = tuple(tupla_numeros[0:3])
+
+# print(f"Tupla: {tupla_numeros}\nSlice da tupla: {tupla_tres_primeiros_numeros}")
 
 # 5. Troca de posições em tuplas: Escreva um programa que, dada uma tupla e dois valores
 # inteiros correspondentes às posições nessa tupla, troque os elementos conforme as
 # posições fornecidas. Lembre-se de que tuplas são imutáveis, portanto, você precisará
 # converter a tupla para uma lista, fazer a troca e depois converter de volta para uma
-# tupla. Imprima o resultado da tupla inicial e com as posições permutadas. Exemplos:
-# Entrada 1:
-# Tupla: (1,2,3,4,5)
-# Posição 1: 2
-# Posição 2: 4
+# tupla. Imprima o resultado da tupla inicial e com as posições permutadas.
 
-# Saída 1:
-# Tupla A: (1,2,3,4,5)
-# Tupla B: (1,2,5,4,3)
+# lista_numeros = []
 
-# Entrada 2:
-# Tupla: (7,2,4,8,3)
-# Posição 1: 0
-# Posição 2: 3
+# numeros = input("Sequência de números separados por espaço: ")
 
-# Saída 2:
-# Tupla A: (7,2,4,8,3)
-# Tupla B: (8,2,4,7,3)
+# for x in numeros:
+#     if x != " ":
+#         lista_numeros += [int(x)]
+
+# tupla_inicial = tuple(lista_numeros)
+
+# posicao1 = int(input("Primeira posição para troca: "))
+# posicao2 = int(input("Segunda posição para troca: "))
+
+# lista_numeros[posicao1], lista_numeros[posicao2] = lista_numeros[posicao2], lista_numeros[posicao1]
+
+# tupla_final = tuple(lista_numeros)
+
+# print(f"Tupla A: {tupla_inicial}\nTupla B: {tupla_final}")
 
 # Conjuntos:
+
 # 6. Criação de conjuntos a partir de listas: Escreva um programa que, dada uma lista
 # números fornecida pelo usuário, converta a lista em um conjunto para eliminar
 # duplicatas. Em seguida, adicione um número extra que seja o dobro do maior valor do
 # conjunto e adicione ao conjunto resultante. Imprima a lista inicial e o conjunto final.
-# Exemplos:
-# Entrada 1:
-# Lista: [1, 1, 2, 3,
-# 3, 4, 4]
 
-# Saída 1:
-# Lista: [1, 1, 2, 3, 3,
-# 4, 4]
-# Conj: {1, 2, 3, 4, 8}
+# elementos_lista = input(f"Elementos da lista separados por espaço: ")
+# elemento = ""
+# lista_numeros = []
 
-# Entrada 2:
-# Lista: [7, 1, 1, 4, 3,
-# 4, 4]
+# for x in elementos_lista:
+#     if x != " ":
+#         lista_numeros += [int(x)]
 
-# Saída 2:
-# Lista: [7, 1, 1, 4, 3,
-# 4, 4]
-# Conj: {1, 3, 4, 7, 14}
+# lista_numeros = set(lista_numeros)
+# print(f"Conj: {lista_numeros}")
 
 # 7. União e diferença: Escreva um programa que solicite ao usuário 3 conjuntos (A, B e
 # C) de números inteiros e em seguida realize as seguintes operações sobre conjuntos:
 # união: (A È B); e diferença: (A È B) - C. O programa deverá exibir como saída o
 # resultado da união e diferença entre os conjuntos (use as funções embutidas union()
-# e difference()). Exemplo:
-# Entrada 1:
-# A: 1,2,3,4
-# B: 2,5,7,9
-# C: 1,4,7,6
+# e difference()).
 
-# Saída 1:
-# União: {1,2,3,4,5,7,9}
-# Diferença: {2,5,3,9}
+# elementos_lista_a = input(f"Elementos da lista A separados por vírgula: ")
+# elementos_lista_b = input(f"Elementos da lista B separados por vírgula: ")
+# elementos_lista_c = input(f"Elementos da lista C separados por vírgula: ")
+# lista_A = []
+# lista_B = []
+# lista_C = []
 
-# Entrada 2:
-# A: 8,2,5,6
-# B: 2,5,7,4
-# C: 2,4,7,6
+# for x in elementos_lista_a:
+#     if x != ",":
+#         lista_A += [int(x)]
 
-# Saída 2:
-# União: {1,2,3,4,5,7,9}
-# Diferença: {2,5,3,9}
+# for x in elementos_lista_b:
+#     if x != ",":
+#         lista_B += [int(x)]
+
+# for x in elementos_lista_c:
+#     if x != ",":
+#         lista_C += [int(x)]
+
+# conjunto_A = set(lista_A)
+# conjunto_B = set(lista_B)
+# conjunto_C = set(lista_C)
+
+# uniao_A_B = conjunto_A.union(conjunto_B)
+# diferenca_uniao_A_B_e_C = uniao_A_B.difference(conjunto_C)
+
+# print(f"União: {uniao_A_B}")
+# print(f"Diferença: {diferenca_uniao_A_B_e_C}")
 
 # 8. Remoção Condicional em Conjuntos: Escreva um programa que receba como entrada
 # uma sequência de valores inteiros e cria um conjunto a partir desses valores. Além
 # disso, o programa também recebe um valor numérico base para atuar como um divisor.
 # Crie um novo conjunto, a partir dos valores inicialmente fornecidos, formado pelos
 # números divisíveis pelo divisor digitado pelo usuário. Exiba na tela os dois conjuntos e
-# o divisor. Exemplos:
+# o divisor.
 
-# Entrada 1:
-# Valores:
-# 1, 9, 3, 2, 3, 6, 4
-# Divisor: 3
+# valores = input("Valores inteiros separados por espaço: ")
+# divisor = int(input("Divisor: "))
+# lista_valores = []
+# lista_valores_inteiros = []
+# lista_valores_divisiveis = []
+# valor_atual = ""
 
-# Saída 1:
-# Conj 1: {1,9,3,2,6,4}
-# Conj 2: {9,3,6}
+# for valor in valores:
+#     if valor == " ":
+#         lista_valores.append(valor_atual)
+#         valor_atual = ""
+#     else:
+#         valor_atual += valor
+    
+# if valor_atual: # Adiciona o úlimo valor
+#     lista_valores.append(valor_atual)
 
-# Entrada 2:
-# Valores:
-# 16, 8, 2, 3, 6, 40
-# Divisor: 4
+# for valor in lista_valores: # Converte os elementos da lista em inteiros
+#     lista_valores_inteiros.append(int(valor))
 
-# Saída 2:
-# Conj 1: {16,8,2,3,6,40}
-# Conj 2: {16,8,40}
+# for valor in lista_valores_inteiros:
+#     if valor % divisor == 0:
+#         lista_valores_divisiveis.append(valor)
+
+# conjunto1 = set(lista_valores_inteiros)
+# conjunto2 = set(lista_valores_divisiveis)
+
+# print(f"Conj 1: {conjunto1}")
+# print(f"Conj 2: {conjunto2}")
 
 # 9. Operações em Conjuntos: Escreva um programa que, dados dois conjuntos A e B de
 # valores fornecidos pelo usuário, verifique se B é um subconjunto de A. Em seguida crie
 # um conjunto C com valores do conjunto A, mas sem os valores do conjunto B. Ao final,
-# exiba os valores de ambos os conjuntos. Exemplos:
-# Entrada 1:
-# A: {1, ‘a’, 8, ‘4’}
-# B: {8, ‘4’}
-
-# Saída 1:
-# B é subconjunto de A
-# A: {1, ‘a’, 8, ‘4’}
-# B: {8, ‘4’}
-# C: {1, ‘a’}
-
-# Entrada 2:
-# A: {1, ‘a’, 8, ‘4’}
-# B: {8, 4}
-
-# Saída 2:
-# B não é subconjunto de A
-# A: {1, ‘a’, 8, ‘4’}
-# B: {8, 4}
-# C: {1, ‘a’, ‘4’}
+# exiba os valores de ambos os conjuntos. 
 
 # 10. Presença de valores em Conjuntos: Escreva um programa que solicite ao usuário uma
 # relação de valores e adicione-os a um conjunto (utilize o operador | para isso). Em
@@ -216,6 +222,7 @@
 #     else:
 
 # Dicionários:
+
 # 11. Escreva um programa que receba como entrada uma string várias palavras separadas
 # por espaço. O programa deverá verificar e apresentar a quantidade de ocorrência de
 # cada palavra no texto repassado como entrada para o programa, sem fazer distinção
@@ -223,72 +230,13 @@
 # contabilizados, como por exemplo “.” Ou “,”. Crie um dicionário que armazene a
 # contagem de cada palavra no texto. A chave do dicionário deve ser a palavra e o valor
 # deve ser o número de vezes que a palavra aparece no texto. Imprima o dicionário
-# resultante. Exemplos:
-# Entrada 1:
-# Lorem ipsum
-# dolor sit amet.
-# Lorem opsum
-# dolor amet, dolor
-# comem.
-
-# Saída 1:
-# Contagem de
-# palavras:
-# {‘Lorem’:2, ‘ipsum’:1,
-# ‘dolor’:3, ‘sit’:1,
-# ‘amet’:2, ‘opsum’:1,
-# ‘comem’:1}
-
-# Entrada 2:
-# Lorem ipsum
-# ipsum lorem sit
-# amet. Lorem
-# corpus dolor
-# amet, dolor
-# comem CorpuS.
-
-# Saída 2:
-# Contagem de
-# palavras:
-# {‘lorem’:3, ‘ipsum’:2,
-# ‘dolor’:2, ‘sit’:1,
-# ‘amet’:1, ‘corpus’:2,
-# ‘dolor’:2, ‘comem’:1}
+# resultante. 
 
 # 12. Escreva um programa que receba como entrada uma relação de tuplas formadas por
 # nomes de frutas e valores. O programa deverá realizar o agrupamento da relação de
 # tuplas pelo nome das tuplas e somar dos valores para criação de um dicionário onde
 # o nome da fruta deve ser a chave e o resultado da soma o valor. Ao final, exiba a lista
-# de valores inicialmente fornecida e o dicionário criado. Exemplos:
-# Entrada 1:
-# itens: [(‘banana’,
-# 3), (‘uva’, 5),
-# (‘uva’, 2),
-# (‘banana’, 2),
-# (‘pêra’, 2)]
-
-# Saída 1:
-# Lista: [(‘banana’, 3),
-# (‘uva’, 5), (‘uva’, 2),
-# (‘banana’, 2),
-# (‘pêra’, 2)]
-# Valores:
-# {‘banana’:5, ‘uva’:7,
-# ‘pêra’:2}
-
-# Entrada 1:
-# itens: [(‘banana’,
-# 3), (‘uva’, 5), (‘uva’,
-# 2), (‘banana’, 2),
-# (‘pêra’, 2)]
-
-# Saída 1:
-# Lista: [(‘banana’, 3), (‘uva’,
-# 5), (‘uva’, 2), (‘banana’, 2),
-# (‘pêra’, 2)]
-# Valores:
-# {‘banana’:5, ‘uva’:7,
-# ‘pêra’:2}
+# de valores inicialmente fornecida e o dicionário criado. 
 
 # 13. Escreva um programa que dado um dicionário aluno_nota, onde as chaves
 # representam nomes de alunos e os valores representam suas respectivas notas, cujos
@@ -296,26 +244,7 @@
 # e os valores do dicionário aluno_nota, ou seja, as notas serão as chaves e os nomes
 # dos alunos serão os valores. Considere que duas ou mais pessoas podem ter a mesma
 # nota, e neste caso, o valor deve ser uma lista com os nomes dos alunos. Imprima o
-# dicionário resultante. Exemplo:
-# Entrada 1:
-# aluno_nota:
-# {‘Ana’:70, ‘José’:80,
-# ‘João’:20, ‘Rita’:20}
-
-# Saída 1:
-# nota_aluno:
-# {70:‘Ana’, 80:‘José’,
-# 20: [‘João’, ‘Rita’]}
-
-# Entrada 2:
-# aluno_nota:
-# {‘Ana’:80, ‘José’:80,
-# ‘João’:20, ‘Rita’:20}
-
-# Saída 2:
-# nota_aluno:
-# {80:[ ‘Ana’, ‘José’],
-# 20: [‘João’, ‘Rita’]}
+# dicionário resultante. 
 
 # 14. Escreva um programa que dado dois dicionários que representam valores de estoque
 # de itens em duas lojas, cujos valores sejam fornecidos pelo usuário. Crie um novo
@@ -323,15 +252,6 @@
 # dicionários, somando as quantidades dos itens que aparecem em ambas as lojas. Para
 # itens que aparecem apenas em uma loja, mantenha a quantidade original. Imprima o
 # dicionário de cada loja e o dicionário resultante.
-# Entrada 1:
-# Loja 1: {‘Item 1’:10, ‘Item 2’:5, ‘Item 3’:10}
-# Loja 2: {‘Item 1’:10, ‘Item 2’:2, ‘Item 4’:10}
-
-# Saída 1:
-# Loja 1: {‘Item 1’:10, ‘Item 2’:5, ‘Item 3’:10}
-# Loja 2: {‘Item 1’:10, ‘Item 2’:5, ‘Item 4’:10}
-# Estoque: {‘Item 1’:20, ‘Item 2’:7, ‘Item 3’:10,
-# ‘Item 4’:10}
 
 # 15. Escreva um programa que realiza o cálculo das vendas de uma lista de vendedores
 # ao longo de um trimestre. O programa deve solicitar a relação de nomes dos
