@@ -104,12 +104,22 @@
 # elementos_lista = input(f"Elementos da lista separados por espaço: ")
 # elemento = ""
 # lista_numeros = []
+# maior_valor = 0
 
 # for x in elementos_lista:
 #     if x != " ":
 #         lista_numeros += [int(x)]
 
+# for valor in lista_numeros:
+#     if valor > maior_valor:
+#         maior_valor = valor
+
+# print(maior_valor)
+
+# lista_numeros += [int(maior_valor*2)]
+
 # lista_numeros = set(lista_numeros)
+
 # print(f"Conj: {lista_numeros}")
 
 # 7. União e diferença: Escreva um programa que solicite ao usuário 3 conjuntos (A, B e
