@@ -190,14 +190,30 @@
 # para a lista é indeterminada e deve ser interrompida quando o usuário digitar o valor
 # ‘$$’ para indicar o término de cada uma das coleções. Ao final o programa deverá exibir
 # o conjunto e a relação de valores da lista informando se os mesmos estão presentes
-# no conjunto. Exemplo:
-# Entrada 1:
-# Conjunto: {1,2,3,5,6,7,8,9}
-# Lista: [1,4,7]
+# no conjunto.
 
-# Saída 1:
-# Conjunto: {1,2,3,5,6,7,8,9}
-# Lista: 1:Sim, 4:Não, 7:Sim
+# valores_conjunto = []
+# valores_lista = []
+# valor_conjunto = ""
+# valor_lista = ""
+
+# while valor_conjunto != "$$":
+#     valor_conjunto = input("Adicionar ao conjunto o valor ($$ para finalizar): ")
+#     if valor_conjunto != "$$":
+#         valores_conjunto += [int(valor_conjunto)]
+
+# while valor_lista != "$$":
+#     valor_lista = input("Adicionar a lista o valor ($$ para finalizar): ")
+#     if valor_lista != "$$":
+#         valores_lista += [int(valor_lista)]
+
+# valores_conjunto = set(valores_conjunto)
+
+# print(f"Conjunto: {valores_conjunto}")
+# for valor in valores_lista:
+#     if valor in valores_conjunto:
+#         print(f"{valor}:Sim", end=", ")
+#     else:
 
 # Dicionários:
 # 11. Escreva um programa que receba como entrada uma string várias palavras separadas
