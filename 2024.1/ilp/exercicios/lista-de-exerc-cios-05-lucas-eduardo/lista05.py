@@ -242,6 +242,30 @@
 # deve ser o número de vezes que a palavra aparece no texto. Imprima o dicionário
 # resultante. 
 
+# string = input("Palavras separadas por espaço: ")
+
+# lista_palavras = string.split(" ")
+# lista_palavras_tratadas = []
+# dicionario_palavras = {}
+
+# for palavra in lista_palavras:
+#     if ("," in palavra) or ("." in palavra):
+#         palavra = palavra.lower()
+#         lista_palavras_tratadas += [palavra[:-1]]
+#     else:
+#         palavra = palavra.lower()
+#         lista_palavras_tratadas += [palavra]
+
+# for palavra in lista_palavras_tratadas:
+#     if palavra not in dicionario_palavras:
+#         dicionario_palavras[palavra] = 1
+#     else:
+#         dicionario_palavras[palavra] += 1
+
+# #Lorem ipsum dolor sit amet. Lorem opsum dolor amet, dolor comem.
+
+# print(f"Contagem de palavras: {dicionario_palavras}")
+
 # 12. Escreva um programa que receba como entrada uma relação de tuplas formadas por
 # nomes de frutas e valores. O programa deverá realizar o agrupamento da relação de
 # tuplas pelo nome das tuplas e somar dos valores para criação de um dicionário onde
