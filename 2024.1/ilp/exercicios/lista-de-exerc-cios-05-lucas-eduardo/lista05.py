@@ -272,6 +272,22 @@
 # o nome da fruta deve ser a chave e o resultado da soma o valor. Ao final, exiba a lista
 # de valores inicialmente fornecida e o dicionário criado. 
 
+# string = 1
+# lista_frutas_valores = []
+# dicionario_frutas_valores = {}
+
+# while string != "0":
+#     string = input("Fruta e quantidade separados por espaço: ('0' para finalizar): ")
+#     if string != "0":
+#         tupla_fruta_valor = tuple(string.split(" "))
+#         lista_frutas_valores += tupla_fruta_valor
+#         if tupla_fruta_valor[0] not in dicionario_frutas_valores.keys():
+#             dicionario_frutas_valores[tupla_fruta_valor[0]] = int(tupla_fruta_valor[1])
+#         else:
+#             dicionario_frutas_valores[tupla_fruta_valor[0]] += int(tupla_fruta_valor[1])
+
+# print(f"Lista: {lista_frutas_valores}\nValores: {dicionario_frutas_valores}")
+
 # 13. Escreva um programa que dado um dicionário aluno_nota, onde as chaves
 # representam nomes de alunos e os valores representam suas respectivas notas, cujos
 # valores sejam fornecidos pelo usuário. Crie um novo dicionário que inverta as chaves
