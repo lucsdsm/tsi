@@ -403,21 +403,3 @@ print("\nPódio:")
 print(f"Medalha de Ouro: {', '.join(medalha_ouro)}")
 print(f"Medalha de Prata: {', '.join(medalha_prata)}")
 print(f"Medalha de Bronze: {', '.join(medalha_bronze)}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
