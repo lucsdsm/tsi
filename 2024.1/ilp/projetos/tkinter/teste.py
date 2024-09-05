@@ -1,19 +1,24 @@
-import tkinter as tk
+from tkinter import *
+## Utilizando o command para passar um event handler
+# class Application:
+#     def __init__(self, master=None):
+#         self.widget1 = Frame(master)
+#         self.widget1.pack()
+#         self.msg = Label(self.widget1, text="Primeiro widget")
+#         self.msg["font"] = ("Calibri", "9", "italic")
+#         self.msg.pack ()
+#         self.sair = Button(self.widget1)
+#         self.sair["text"] = "Clique aqui"
+#         self.sair["font"] = ("Calibri", "9")
+#         self.sair["width"] = 10
+#         self.sair["command"] = self.mudarTexto
+#         self.sair.pack ()
 
-def on_button_click():
-    label.config(text="Você clicou no botão!")
-
-# Criação da janela principal
-root = tk.Tk()
-root.title("Exemplo 1")
-
-# Criação de um botão
-button = tk.Button(root, text="Clique aqui", command=on_button_click)
-button.pack()
-
-# Criação de um rótulo (label)
-label = tk.Label(root, text="Aguardando ação...")
-label.pack()
-
-# Inicia o loop da aplicação
-root.mainloop()
+#     def mudarTexto(self):
+#         if self.msg["text"] == "Primeiro widget":
+#             self.msg["text"] = "O botão recebeu um clique"
+#         else:
+#             self.msg["text"] = "Primeiro widget"
+# root = Tk()
+# Application(root)
+# root.mainloop()
