@@ -12,50 +12,41 @@
     <nav class="navbar navbar-expand-lg navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Homies Store</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Carrinho</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-light"> <a class="nav-link active" href="contato.html">Contate-nos</a> </button>
+                </li>
             </div>
         </div>
     </nav>
 
     <section class="container py-4">
-        <div>
-            <h1>Bem vindo à Homies Store!</h1>
-            <p class="lead">Melhores modelos 3D com os melhores preços.</p>
-            <button type="button" class="btn btn-primary"> Modelos </button>
-        </div>
+        <h1>Bem vindo à Homies Store!</h1>
+        <p class="lead">Melhores modelos 3D com os melhores preços.</p>
+        <button type="button" class="btn btn-warning"> Modelos </button>
     </section>
 
     <section>
         <div class="container">
-            <h3 class="text-center mb-4">Ofertas da semana!</h3>
             <div class="row">
                 <div class="col-md-4">
                     <!-- Primeiro card -->
                     <div class="card mb-4">
-                        <img src="media/siena1.png" class="card-img-top" alt="Imagem do componente">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="media/siena1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/siena2.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title"> Fiat Siena ELX 2009/10</h5>
                             <p class="card-text mt-3">Modelo midpoly com interior lore-friendly.</p>
                             <h6 class="mb-3">R$ 49,90</h6>
-                            <a href="#" class="btn btn-primary mt-1">Adquirir</a>
+                            <a href="#" class="btn btn-light mt-1">Adquirir</a>
                         </div>
                     </div>
                 </div>
@@ -63,48 +54,49 @@
                 <div class="col-md-4">
                     <!-- Segundo card -->
                     <div class="card mb-4">
-                        <img src="media/attractive1.png" class="card-img-top" alt="Imagem do componente">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="media/attractive1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/attractive1.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title"> Fiat Palio Weekend Attractive 2009/10</h5>
                             <p class="card-text mt-3">Modelo midpoly com interior lore-friendly.</p>
                             <h6 class="mb-3">R$ 49,90</h6>
-                            <a href="#" class="btn btn-primary mt-1">Adquirir</a>
+                            <a href="#" class="btn btn-light mt-1">Adquirir</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <!-- Terceiro card -->
                     <div class="card mb-4">
-                        <img src="media/palio1.png" class="card-img-top" alt="Imagem do componente">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="media/palio1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="media/palio2.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title"> Fiat Palio ELX 2009/10</h5>
                             <p class="card-text mt-3">Modelo midpoly com interior lore-friendly.</p>
                             <h6 class="mb-3">R$ 49,90</h6>
-                            <a href="#" class="btn btn-primary mt-1">Adquirir</a>
+                            <a href="#" class="btn btn-light mt-1">Adquirir</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row py-3">
-                <div class="col-sm-6">
-                    <h5>Homies Store</h5>
-                    <p class="lead">Os modelos que você precisa em um só lugar</p>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Links úteis</h5>
-                    <a class="link-secondary" href="#">Termos de serviço</a> <br>
-                    <a class="link-secondary" href="#">Políticas de privacidade</a>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Redes Sociais</h5>
-                    <a class="link-secondary" href="#">Instagram</a> <br>
-                    <a class="link-secondary" href="#">Discord</a>
-                </div>
-            </div>
         </div>
     </section>
-    <footer class="fixed-bottom bg-dark text-white py-1 text-center">
+    <footer class="fixed-bottom bg-white text-black py-1 text-center">
         <p class="mt-2">© 2024 Homies Store. Todos os direitos reservados.</p>
     </footer>
 
