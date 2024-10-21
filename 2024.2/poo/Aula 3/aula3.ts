@@ -25,3 +25,5 @@ class ContaCorrente {
     }
     
   }
+
+  const conta = new ContaCorrente(1, "Lucas", 0)
