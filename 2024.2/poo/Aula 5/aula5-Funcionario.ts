@@ -35,7 +35,7 @@ class Funcionario {
   }
 }
 
-class Gerente extends Funcionario {
+class Gerente extends Funcionario { // Aqui o bônus é obrigatório
   bonus: number = 0;
   
   constructor(nome: string, salarioBase: number, bonus: number) {
@@ -48,13 +48,8 @@ class Gerente extends Funcionario {
   }
 }
 
-class Vendedor extends Funcionario {
+class Vendedor extends Funcionario { // Aqui a comissão é opcional
 comissao: number = 0;
-  
-  constructor(nome: string, salarioBase: number, comissao: number) {
-  super(nome, salarioBase);
-      this.comissao = comissao;
-  }
   
   calcularSalario() {
      return this.salarioBase + this.comissao;
@@ -67,6 +62,7 @@ console.log("Salário: " + "R$ "+ funcionario.calcularSalario());
 let gerente = new Gerente("Lucas", 2200, 300);
 console.log("Salário: " + "R$ "+ gerente.calcularSalario());
 
-let vendedor = new Vendedor("Lucas", 1500, 100);
+let vendedor = new Vendedor("Lucas", 1500);
 console.log("Salário: " + "R$ "+ vendedor.calcularSalario());
-
+vendedor.comissao = 500
+console.log("Salário: " + "R$ "+ vendedor.calcularSalario());
