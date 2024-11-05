@@ -36,7 +36,7 @@ class Funcionario {
 }
 
 class Gerente extends Funcionario {
-bonus: number;
+  bonus: number = 0;
   
   constructor(nome: string, salarioBase: number, bonus: number) {
   super(nome, salarioBase);
@@ -49,7 +49,7 @@ bonus: number;
 }
 
 class Vendedor extends Funcionario {
-comissao: number;
+comissao: number = 0;
   
   constructor(nome: string, salarioBase: number, comissao: number) {
   super(nome, salarioBase);
@@ -61,7 +61,12 @@ comissao: number;
   }
 }
 
-let f: Funcionario = new Funcionario("Lucas", 1200);
-f.calcularSalario();
+let funcionario = new Funcionario("Lucas", 1200);
+console.log("Salário: " + "R$ "+ funcionario.calcularSalario());
 
+let gerente = new Gerente("Lucas", 2200, 300);
+console.log("Salário: " + "R$ "+ gerente.calcularSalario());
+
+let vendedor = new Vendedor("Lucas", 1500, 100);
+console.log("Salário: " + "R$ "+ vendedor.calcularSalario());
 
