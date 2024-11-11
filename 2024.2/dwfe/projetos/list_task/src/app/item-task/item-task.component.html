@@ -1,6 +1,10 @@
 <li>
 	<div>
-		<h5> {{ task.name }}</h5>
+		<h5 [style.color]="task.isComplete  ?  'gray'  :  'black'"> 
+			{{ task.name }}
+		</h5>
 	</div>
-	<button>{{ task.isComplete ? 'Reabrir' : 'Finalizar' }}</button>
+	<button (click)="changeStatusTask()">
+		{{ task.isComplete ? 'Reabrir' : 'Finalizar' }}
+	</button>
 </li>
