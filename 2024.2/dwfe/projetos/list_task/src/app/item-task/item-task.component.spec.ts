@@ -1,17 +1,23 @@
-import { Component } from  '@angular/core';
-import { Task } from  '../../models/task';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-@Component({
-	selector:  'app-item-task',
-	standalone:  true,
-	imports: [],
-	templateUrl:  './item-task.component.html',
-	styleUrl:  './item-task.component.css'
-})
-export  class  ItemTaskComponent {
-	task = new Task({name:"Componentes Angular", isComplete:false});
-	
-	changeStatusTask() {
-		this.task.isComplete = !this.task.isComplete;
-	}
-}
+import { ItemTaskComponent } from './item-task.component';
+
+describe('ItemTaskComponent', () => {
+  let component: ItemTaskComponent;
+  let fixture: ComponentFixture<ItemTaskComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [ItemTaskComponent]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(ItemTaskComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

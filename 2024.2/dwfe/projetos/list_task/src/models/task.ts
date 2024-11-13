@@ -1,14 +1,14 @@
-export  class  Task {
-	name:  string;
-	isComplete:  boolean;
-
-	constructor(task  :  ITask) {
-		this.name  =  task.name;
-		this.isComplete  =  task.isComplete;
-	}
+export class Task {
+    name: string;
+    isCompleted: boolean;
+  
+    constructor(task : ITask) {
+      this.name = task.name;
+      this.isCompleted = task.isCompleted;
+    }
 }
 
-interface  ITask{
-	name:  string;
-	isComplete:  boolean;
+interface ITask{
+    name: string;
+    isCompleted: boolean;
 }
