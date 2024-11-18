@@ -45,7 +45,7 @@ class Professor {
       this.disciplinas = [];
     }
 
-    adicionarDisciplina(disciplina: Disciplina): void {
+    adicionarDisciplina(disciplina: Disciplina) {
       this.disciplinas.push(disciplina);
     }
 
