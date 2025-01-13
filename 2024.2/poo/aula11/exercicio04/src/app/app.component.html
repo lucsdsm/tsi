@@ -1,0 +1,9 @@
+<h1> Listagem de usuários </h1>
+<hr>
+<button (click)="onGetUsuarios()"> Listar </button>
+
+<div>
+  {{ usuarios | json }}
+</div>
+
+<router-outlet />
