@@ -1,24 +1,52 @@
 <h1> Listagem de usuários </h1>
+<p-button (click)="onGetUsuarios()" label="Listar"> </p-button> <br> <br>
 <hr>
-<p-button (click)="onGetUsuarios()" label="Listar"> Listar </p-button>
+<p-table #minhaTabela
+    [value]="usuarios"
+    dataKey="id"
+    [paginator]="true"
+    [rows]="5"
+    [rowsPerPageOptions]="[5, 10, 20]"
+    [globalFilterFields]="['id','first_name', 'last_name', 'email']">
 
-<p-table [value]="usuarios">
-  <ng-template #header>
-      <tr>
-          <th>Codigo</th>
-          <th>Nome</th>
-          <th>Sobrenome</th>
-          <th>E-mail</th>
-      </tr>
-  </ng-template>
-  <ng-template #body let-usuario>
-      <tr>
-          <td>{{ usuario.id }}</td>
-          <td>{{ usuario.first_name }}</td>
-          <td>{{ usuario.last_name }}</td>
-          <td>{{ usuario.email }}</td>
-      </tr>
-  </ng-template>
+    <ng-template #caption>
+        <div class="flex">
+            <p-iconfield iconPosition="left" class="ml-auto">
+                <p-inputicon>
+                    <i class="pi pi-search"></i>
+                </p-inputicon>
+                
+                <input
+                    pInputText
+                    type="text"
+                    [(ngModel)]="texto"
+                    (input)="minhaTabela.filterGlobal(texto, 'contains')"
+                    placeholder="Search keyword"
+                />
+            </p-iconfield>
+        </div>
+    </ng-template>
+
+    <ng-template #header>
+        <tr>
+            <th pSortableColumn="id" style="width:30%" style="text-align: center;"> Codigo <p-sortIcon field="id" />
+            <th pSortableColumn="first_name" style="width:30%" style="text-align: center;"> Nome <p-sortIcon
+                    field="first_name" />
+            <th pSortableColumn="last_name" style="width:30%" style="text-align: center;"> Sobrenome <p-sortIcon
+                    field="last_name" />
+            <th pSortableColumn="email" style="width:10%" style="text-align: center;"> E-mail <p-sortIcon field="email" />
+        </tr>
+    </ng-template>
+    <ng-template #body let-usuario>
+        <tr>
+            <td style="text-align: center;">{{ usuario.id }}</td>
+            <td style="text-align: center;">{{ usuario.first_name }}</td>
+            <td style="text-align: center;">{{ usuario.last_name }}</td>
+            <td style="text-align: center;">{{ usuario.email }}</td>
+            <td style="text-align: center;"> <img src="{{ usuario.avatar }}" style="width: 64px; border-radius: 360px;">
+            </td>
+        </tr>
+    </ng-template>
 </p-table>
 
 <router-outlet />
