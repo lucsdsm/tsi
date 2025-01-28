@@ -14,13 +14,22 @@ import { Image, ImageModule } from 'primeng/image';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TableModule, ButtonModule, IconField, InputIcon, FormsModule, InputTextModule, ImageModule],
+  imports: [RouterOutlet, 
+    TableModule, 
+    ButtonModule, 
+    IconField, 
+    InputIcon, 
+    FormsModule, 
+    InputTextModule, 
+    ImageModule, 
+    JsonPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
   usuarios: Usuario[] = [];
   texto = ''
+  usuarioSelecionado?: Usuario;
   
   constructor(private servico: UsuarioService) {
     

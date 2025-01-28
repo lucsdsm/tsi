@@ -1,9 +1,35 @@
-<h1> Listagem de usuários </h1>
+<h1 style="text-align: center;"> Listagem de usuários </h1>
 <p-button (click)="onGetUsuarios()" label="Listar"> </p-button> <br> <br>
 <hr>
+
+<table> 
+    <tr> 
+        <td> <b> Código </b> </td>
+        <td> {{ usuarioSelecionado?.id }} </td>
+    </tr>
+    <tr> 
+        <td> <b> Nome </b> </td>
+        <td> {{ usuarioSelecionado?.first_name }} </td>
+    </tr>
+    <tr> 
+        <td> <b> Sobrenome </b> </td>
+        <td> {{ usuarioSelecionado?.last_name }} </td>
+    </tr>
+    <tr> 
+        <td> <b> E-mail </b> </td>
+        <td> {{ usuarioSelecionado?.email }} </td>
+    </tr>
+    <tr> 
+        <td> <b> Avatar </b> </td>
+        <td> <img src="{{ usuarioSelecionado?.avatar }}" style="width: 64px; border-radius: 360px;">  </td>
+    </tr>
+</table>
+
 <p-table #minhaTabela
     [value]="usuarios"
     dataKey="id"
+    selectionMode="single"
+    [(selection)]="usuarioSelecionado"
     [paginator]="true"
     [rows]="5"
     [rowsPerPageOptions]="[5, 10, 20]"
@@ -38,7 +64,7 @@
         </tr>
     </ng-template>
     <ng-template #body let-usuario>
-        <tr>
+        <tr [pSelectableRow]="usuario">
             <td style="text-align: center;">{{ usuario.id }}</td>
             <td style="text-align: center;">{{ usuario.first_name }}</td>
             <td style="text-align: center;">{{ usuario.last_name }}</td>
