@@ -19,13 +19,26 @@ function soma2(n: number): number {
     }
 }
 
-function fibonacci(n: number): number {
-    if (n <= 1) return n;
-    return fibonacci(n - 1) + fibonacci(n - 2);
-}
-
-console.log(`Fibonacci: ${fibonacci(5)}`); 
-
+function fibonacci(n: number, memo: { [key: number]: number } = {}): number {
+    if (n <= 1) {
+      return n;
+    }
+  
+    if (memo[n] !== undefined) {
+      console.log(`Usando valor já calculado para ${n}: ${memo[n]}`);
+      return memo[n];
+    }
+  
+    console.log(`Calculando fibonacci(${n})`);
+    memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
+    return memo[n];
+  }
+  
+  // Exemplo de uso:
+  const numero = 10;
+  console.log(`Fibonacci de ${numero} é: ${fibonacci(numero)}`);
+  
+  
 // 1
 function somaVetor(vetor: number[], n: number): number {
     if (n < 0) return 0;
@@ -62,8 +75,7 @@ function mdc(a: number, b: number): number {
     return mdc(b, a % b);
 }
 
-console.log(`MDC: ${mdc(48, 18)}`); // 
-
+console.log(`MDC: ${mdc(48, 18)}`); // 6
 
 // 5
 function multiplicacao(a: number, b: number): number {
