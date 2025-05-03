@@ -11,18 +11,27 @@
       <div class="card p-4 shadow" style="width: 100%; max-width: 400px;">
         <h2 class="text-center mb-3">Bem-vindo!</h2>
         <p class="text-center text-muted">Por favor, faça login para continuar</p>
-        <form action="/login" method="post">
+        <form action="/home" method="post">
           <div class="mb-3">
             <label for="usuario" class="form-label">Usuário</label>
             <input type="text" class="form-control" id="usuario" name="usuario" required/>
           </div>
           <div class="mb-3">
             <label for="senha" class="form-label">Senha</label>
-            <input type="senha" class="form-control" id="senha" name="senha" required/>
+            <input type="password" class="form-control" id="senha" name="senha" required/>
           </div>
           <div class="d-grid">
             <button type="submit" class="btn btn-primary">Entrar</button>
+
           </div>
+
+          <div class="mt-4">
+            {% if invalido %}
+            <p class="text-danger text-center"> Usuário ou senha inválidos. </p>
+            {% else %}
+            {% endif %}  
+          </div>
+
         </form>
       </div>
     </div>
