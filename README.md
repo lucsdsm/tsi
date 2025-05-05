@@ -1,1 +1,1 @@
-<p align="left">Reposiório para organização dos componenetes curriculares do meu curso.</p>
+<p align="left">Repositório para organização dos componenetes curriculares do meu curso.</p>
