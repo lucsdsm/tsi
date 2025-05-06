@@ -33,7 +33,7 @@ musicas_favoritas = {
 @app.route('/home', methods=['GET', 'POST'])
 def home():
     # Se o método for POST, pode ser login ou ação de música
-    if request.method == 'POST':
+    if request.method == 'post':
         # Se for tentativa de login (usuário e senha estão presentes)
         if 'usuario' in request.form and 'senha' in request.form:
             usuario = request.form['usuario']

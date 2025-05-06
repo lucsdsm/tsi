@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Segoe UI', sans-serif;
+        }
+    
+        body {
+          background-color: #121212;
+          color: #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+    
+        .login-container {
+          background-color: #1e1e1e;
+          padding: 2rem;
+          border-radius: 12px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          width: 100%;
+          max-width: 360px;
+        }
+    
+        .login-container h2 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+          font-weight: 500;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .form-group {
+          margin-bottom: 1rem;
+        }
+    
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-size: 0.9rem;
+          color: #bbbbbb;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+          width: 100%;
+          padding: 0.75rem;
+          border: none;
+          border-radius: 8px;
+          background-color: #2a2a2a;
+          color: #fff;
+          font-size: 1rem;
+        }
+    
+        input[type="submit"] {
+          width: 100%;
+          padding: 0.75rem;
+          border: none;
+          border-radius: 8px;
+          background-color: #03dac5;
+          color: #000;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+    
+        input[type="submit"]:hover {
+          background-color: #00c4b4;
+        }
+
+        a {
+          width: 100%;
+          text-align: center;
+          text-decoration: none;
+          padding: 0.75rem;
+          border: none;
+          border-radius: 8px;
+          background-color: #03dac5;
+          color: #000;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+    
+        a:hover {
+          background-color: #00c4b4;
+        }
+    
+        @media (max-width: 400px) {
+          .login-container {
+            margin: 1rem;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2> Olá, {{ person }}.</h2>
+        <form method="get" action="">
+            <div class="form-group">
+
+            </div>
+            <a href="/"> Voltar </a>
+        </form>
+    </div>
+</body>
+
+</html>
