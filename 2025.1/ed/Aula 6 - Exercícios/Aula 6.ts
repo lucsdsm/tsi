@@ -54,4 +54,3 @@ function ehPalindromo(palavra: string, inicio: number = 0, fim: number = palavra
 const palavraTeste = "radar";
 const resultadoPalindromo = ehPalindromo(palavraTeste);
 console.log(`A palavra "${palavraTeste}" é palíndroma? ${resultadoPalindromo}`);
-
