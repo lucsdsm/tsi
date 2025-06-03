@@ -84,7 +84,7 @@ export function insertionSort<T>(arr: T[]): T[] {
   return arr;
 }
 
-const N = 100000;
+const N = 10000;
 const vetorDesordenado = Array.from({ length: N }, (_, i) => i + 1).sort(() => Math.random() - 0.5);
 // console.log("Vetor desordenado:", vetorDesordenado);
 
