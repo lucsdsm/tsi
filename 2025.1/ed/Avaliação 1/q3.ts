@@ -25,6 +25,17 @@ class BrowserHistory {
         
     }
 
+    forward(): string | null {
+        if (this.forwardStack.length === 0) {
+            return null;
+        }
+
+        const next = this.forwardStack.pop()!;
+        this.backStack.push(this.current);
+        this.current = next;
+        return this.current;
+    }
+
     getCurrentPage(): string {
         return this.current;
     }
@@ -37,3 +48,8 @@ navegador.visit("google.com");
 navegador.visit("openai.com");
 console.log(navegador.getCurrentPage()); // "openai.com"
 navegador.back(); // retorna "google.com"
+console.log(navegador.getCurrentPage()); // "google.com"
+navegador.back(); // retorna "home.com"
+navegador.back(); // retorna null (já está no início)
+navegador.forward(); // retorna "google.com"
+navegador.visit("github.com");
